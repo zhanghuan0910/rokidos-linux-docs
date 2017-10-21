@@ -6,57 +6,60 @@
 		* [概览](source/getting_started/overview.md)
 		* [品牌使用准则*](source/getting_started/brand_guidelines.md)
 		* [许可*](source/getting_started/licenses.md)
-		* 常见问题解答
+		* [X]常见问题解答
 	* [下载和构建](source/downloading_building/requirements.md)
 		* [概览](source/downloading_building/requirements.md)
 		* [搭建编译环境](source/downloading_building/build_env.md)
-		* 下载源代码
-		* 准备构建
-		* 选择设备
-		* 已知问题
-	* 开发
-		* 概览
-		* 使用repo
-		* 了解Git
-	* 做出贡献
-		* 概览
-		* 报告错误	
-	* 社区
+		* [X] 下载源代码
+		* [X] 准备构建
+		* [X] 选择设备
+		* [X] 已知问题
+	* [X] 开发
+		* [X] 概览
+		* [X] 使用repo
+		* [X] 了解Git
+	* [X] 做出贡献
+		* [X] 概览
+		* [X] 报告错误	
+	* [X]社区
 * [安全性*](security/overview.md)
 	* [概览](security/overview.md)
-	* 内核安全性
-	* 应用安全性
-	* 实现安全性
-	* 更新和资源
-	* 致谢
-	* 应用签名
-	* 身份验证
-	* 密钥存储区
-	* 加密
-	* SELinux
-	* 验证启动
+	* [X] 内核安全性
+	* [X] 应用安全性
+	* [X] 实现安全性
+	* [X] 更新和资源
+	* [X] 致谢
+	* [X] 应用签名
+	* [X] 身份验证
+	* [X] 密钥存储区
+	* [X] 加密
+	* [X] SELinux
+	* [X] 验证启动
 * [移植](porting/overview.md)
 	* [音频](porting/overview.md)
 		* [概览](porting/overview.md)
-		* 术语
-		* 调试
-	* 蓝牙
+		* [X] 术语
+		* [X] 调试
+	* [X] 蓝牙
 	* [X] 相机
 	* [X] 图形
-	* 输入
-		* 概览
-		* 按键布局文件
-		* 按键字符映射文件
-		* 输入设备配置文件
-		* 迁移指南
-		* 键盘设备
-		* 触摸设备
-		* 诊断
-		* Getevent
-		* 验证按键映射
-	* 媒体
+	* [X] 输入
+		* [X] 概览
+		* [X] 按键布局文件
+		* [X] 按键字符映射文件
+		* [X] 输入设备配置文件
+		* [X] 迁移指南
+		* [X] 键盘设备
+		* [X] 触摸设备
+		* [X] 诊断
+		* [X] Getevent
+		* [X] 验证按键映射
+	* [X] 媒体
 	* [X] 传感器
-	* 存储设备
-	* Node.js ecosystem
-* [微调](tuning/overview.md)
+	* [X] 存储设备
+	* [X] Node.js ecosystem
+* [微调*](tuning/overview.md)
 * [参考](reference/overview.md)
+	* [开发板列表](reference/dev_board/board_list.md)
+		* [Amlogic/A113](reference/dev_board/amlogic/a113.md)
+		* [Amlogic/S905D](reference/dev_board/amlogic/s905d.md)

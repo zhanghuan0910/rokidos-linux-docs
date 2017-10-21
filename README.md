@@ -1,6 +1,6 @@
 # 你好，开发者！
 
-[![Build Status](https://travis-ci.org/Rokid/rosp-linux-docs.svg?branch=master)](https://travis-ci.org/Rokid/rosp-linux-docs)
+[![Build Status](https://travis-ci.org/Rokid/rokidos-linux-docs.svg?branch=master)](https://travis-ci.org/Rokid/rokidos-linux-docs)
 
 RokidOS 用 AI 改变生活！欢迎您的设备的搭载 RokidOS 开放源代码操作系统。
 

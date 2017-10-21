@@ -1,0 +1,36 @@
+
+{
+    "author": "RokidOS Open Source Project Team (Linux)",
+    "description": "RokidOS 开放源代码项目介绍",
+    "extension": null,
+    "generator": "site",
+    "links": {
+        "sharing": {
+            "all": null,
+            "facebook": null,
+            "google": null,
+            "twitter": null,
+            "weibo": null
+        },
+        "sidebar": {
+            "Rokid Developer Website": "http://developer.rokid.com"
+        }
+    },
+    "output": null,
+    "pdf": {
+        "fontSize": 12,
+        "footerTemplate": null,
+        "headerTemplate": null,
+        "margin": {
+            "bottom": 36,
+            "left": 62,
+            "right": 62,
+            "top": 36
+        },
+        "pageNumbers": false,
+        "paperSize": "a4"
+    },
+    "plugins": ["expandable-chapters-small"],
+    "title": "RokidOS 开放源码项目",
+    "variables": {}
+}

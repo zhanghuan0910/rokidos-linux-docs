@@ -7,9 +7,9 @@
 		* [品牌使用准则*](source/getting_started/brand_guidelines.md)
 		* [许可*](source/getting_started/licenses.md)
 		* 常见问题解答
-	* 下载和构建
-		* 概览
-		* 搭建编译环境
+	* [下载和构建](source/downloading_building/requirements.md)
+		* [概览](source/downloading_building/requirements.md)
+		* [搭建编译环境](source/downloading_building/build_env.md)
 		* 下载源代码
 		* 准备构建
 		* 选择设备

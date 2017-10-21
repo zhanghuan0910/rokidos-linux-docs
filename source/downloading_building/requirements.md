@@ -22,4 +22,13 @@ GNU/Linux
 
 ## 其他
 
-RokidOS 目前使用的是上游芯片厂商Amlogic的Buildroot编译环境，如果您不了解Buildroot，请先详细阅读[The Buildroot user manual](https://buildroot.org/downloads/manual/manual.html)。
+* Buildroot嵌入式开发环境
+
+RokidOS 目前已经支持的Buildroot嵌入式开发环境。
+
+如果您采用的芯片或开发板是Amlogic厂商所提供的，并且您对Buildroot缺乏了解，请先详细阅读 [The Buildroot user manual](https://buildroot.org/downloads/manual/manual.html) 文档。
+
+* Openwrt嵌入式开发环境
+
+RokidOS 目前正在支持开源社区普遍使用的Openwrt编译框架。
+

@@ -48,6 +48,7 @@
 	* [Node.js](development/tutorial-nodejs.md)
 	* [C/C++](development/tutorial-cplusplus.md)
 		* [语音合成](development/cplusplus/tts.md)
+		* [音量控制](development/cplusplus/volume_ctrl.md)
 		* [多媒体播放](development/cplusplus/mediaplayer.md)
 * [安全性](security/overview.md)
 	* [概览](security/overview.md)

@@ -1,6 +1,10 @@
 # TTS
 
-我们的语音合成接口使用 C/S 架构，服务端默认启动，开发者需要通过调用客户端接口与服务端通讯，客户端头文件目录位于：
+我们的语音合成接口使用 C/S 架构，服务端默认启动，开发者需要通过调用客户端接口与服务端通讯，TTS服务架构图如下：
+
+![Tts_Architecture](../../files/Tts_Architecture.png)
+
+客户端头文件目录位于：
 
 ```c
 #include <rokid/tts/tts_client.h>
@@ -49,16 +53,12 @@ void (*onError)(int id, int err, void* userdata);
 #include <rokid/tts/tts_client.h>
 
 void onStart(int id, void* userdata) {
-  // todo
 }
 void onCancel(int id, void* userdata) {
-  // todo
 }
 void onComplete(int id, void* userdata) {
-  // todo
 }
 void onError(int id, int err, void* userdata) {
-  // todo
 }
 
 int main(int argc, char** argv) {
@@ -73,3 +73,5 @@ int main(int argc, char** argv) {
   return 0;
 }
 ```
+
+

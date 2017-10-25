@@ -50,20 +50,20 @@
 		* [语音合成](development/cplusplus/tts.md)
 		* [音量控制](development/cplusplus/volume_ctrl.md)
 		* [多媒体播放](development/cplusplus/mediaplayer.md)
-* [安全性](security/overview.md)
-	* [概览](security/overview.md)
-	* [X] 内核安全性
-	* [X] 应用安全性
-	* [X] 实现安全性
-	* [X] 更新和资源
-	* [X] 致谢
-	* [X] 应用签名
-	* [X] 身份验证
-	* [X] 密钥存储区
-	* [X] 加密
-	* [X] SELinux
-	* [X] 验证启动
-* [微调](tuning/overview.md)
+<!--* [安全性](security/overview.md)-->
+<!--	* [概览](security/overview.md)-->
+<!--	* [X] 内核安全性-->
+<!--	* [X] 应用安全性-->
+<!--	* [X] 实现安全性-->
+<!--	* [X] 更新和资源-->
+<!--	* [X] 致谢-->
+<!--	* [X] 应用签名-->
+<!--	* [X] 身份验证-->
+<!--	* [X] 密钥存储区-->
+<!--	* [X] 加密-->
+<!--	* [X] SELinux-->
+<!--	* [X] 验证启动-->
+<!--* [微调](tuning/overview.md)-->
 * [参考](reference/overview.md)
 	* [开发板列表](reference/dev_board/board_list.md)
 		* [Amlogic/A113](reference/dev_board/amlogic/a113.md)

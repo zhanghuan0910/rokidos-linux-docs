@@ -10,7 +10,7 @@
 	* [下载和构建](source/downloading_building/requirements.md)
 		* [概览](source/downloading_building/requirements.md)
 		* [搭建编译环境](source/downloading_building/build_env.md)
-		* [X] 下载源代码
+		* [下载源代码](source/downloading_building/downloading_codes.md)
 		* [X] 准备构建
 		* [X] 选择设备
 		* [X] 已知问题

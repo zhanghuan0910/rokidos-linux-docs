@@ -6,7 +6,7 @@
 		* [概览](source/getting_started/overview.md)
 		* [品牌使用准则](source/getting_started/brand_guidelines.md)
 		* [许可](source/getting_started/licenses.md)
-		* [常见问题解答](source/faq.md)
+<!--		* [常见问题解答](source/faq.md) -->
 	* [下载和构建](source/downloading_building/requirements.md)
 		* [概览](source/downloading_building/requirements.md)
 		* [搭建编译环境](source/downloading_building/build_env.md)
@@ -14,10 +14,10 @@
 		* [X] 准备构建
 		* [X] 选择设备
 		* [X] 已知问题
-	* [X] 开发
-		* [X] 概览
-		* [X] 使用repo
-		* [X] 了解Git
+<!--	* [X] 开发 -->
+<!--		* [X] 概览 -->
+<!--		* [X] 使用repo -->
+<!--		* [X] 了解Git -->
 	* [X] 做出贡献
 		* [X] 概览
 		* [X] 报告错误	

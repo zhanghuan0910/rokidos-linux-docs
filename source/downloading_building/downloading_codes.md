@@ -30,4 +30,24 @@ $ PATH=~/bin:$PATH
 	
 ## 初始化 repo 客户端
 
+需要根据您的开发板的芯片厂商来选择具体的代码下载库，各类支持 RokidOS 的开发板，详见[开发板列表](](../../reference/dev_board/board_list.html)章节。
 
+**以下示例同步的代码仅保证支持Amlogic-A113开发板。**
+
+* 运行repo init
+	* repo 是Google官方版本
+
+	```
+	repo init -u ssh://your-account@openai.rokid-inc.com:29418/amlogic_a113_audio/manifest -m rokidbase.xml
+	```
+
+	* repo 是Rokid 修正版本
+
+	```
+	repo init -u ssh://your-account@openai.rokid-inc.com:29418/amlogic_a113_audio/manifest -m rokidbase.xml --repo-url=ssh://your-account@openai.rokid-inc.com/tools/repo --no-repo-verify
+	```
+
+* 下载RokidOS 代码树
+	```
+	repo sync
+	```

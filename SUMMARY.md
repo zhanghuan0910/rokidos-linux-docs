@@ -12,16 +12,16 @@
 		* [搭建编译环境](source/downloading_building/build_env.md)
 		* [下载源代码](source/downloading_building/downloading_codes.md)
 		* [准备构建](source/downloading_building/building.md)
-		* [X] 选择设备
-		* [X] 已知问题
+		* [刷机说明](source/downloading_building/burn_image.md)
+<!-- 		* 已知问题 -->
 <!--	* [X] 开发 -->
 <!--		* [X] 概览 -->
 <!--		* [X] 使用repo -->
 <!--		* [X] 了解Git -->
-	* [X] 做出贡献
-		* [X] 概览
-		* [X] 报告错误	
-	* [X]社区
+<!--	* [X] 做出贡献-->
+<!--		* [X] 概览-->
+<!--		* [X] 报告错误	-->
+<!--	* [X]社区 -->
 * [系统移植](porting/overview.md)
 	* [音频](porting/audio/overview.md)
 		* [概览](porting/audio/overview.md)
@@ -31,8 +31,8 @@
 	* [WiFi](porting/wifi/wifi.md) 
 	* [系统升级](porting/upgrade/upgrade.md) 
 	* [X] 蓝牙
-	* [X] 相机
-	* [X] 图形
+<!--	* [X] 相机 -->
+	* [TBD] 图形
 	* [X] 输入
 		* [X] 概览
 		* [X] 按键布局文件
@@ -45,7 +45,7 @@
 		* [X] Getevent
 		* [X] 验证按键映射
 	* [X] 媒体
-	* [X] 传感器
+<!-- 	* [X] 传感器 -->
 	* [X] 存储设备
 * [应用开发](development/overview.md)
 	* [Node.js](development/tutorial-nodejs.md)

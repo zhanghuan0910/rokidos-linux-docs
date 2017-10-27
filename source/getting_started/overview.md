@@ -5,6 +5,9 @@ RokidOS 是一个针对多种不同设备类型打造的开放源代码以语音
 ## 系统架构图
 ![Rokid_Linux_Architecture](../../files/RokidOS_Architecture-1.png)
 
+## 语音数据流示意图
+TBD（待补充）
+
 ## 系统特性
 * **Linux Native Services**
 	* **systemd** Linux Init System - systemd 管理各种服务进程

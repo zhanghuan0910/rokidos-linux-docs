@@ -11,7 +11,7 @@
 		* [概览](source/downloading_building/requirements.md)
 		* [搭建编译环境](source/downloading_building/build_env.md)
 		* [下载源代码](source/downloading_building/downloading_codes.md)
-		* [X] 准备构建
+		* [准备构建](source/downloading_building/building.md)
 		* [X] 选择设备
 		* [X] 已知问题
 <!--	* [X] 开发 -->

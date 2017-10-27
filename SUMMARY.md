@@ -28,6 +28,8 @@
 		* [X] 术语
 		* [X] 调试
 	* [开机动画](porting/bootanim/bootanim.md)
+	* [WiFi](porting/wifi/wifi.md) 
+	* [系统升级](porting/upgrade/upgrade.md) 
 	* [X] 蓝牙
 	* [X] 相机
 	* [X] 图形
@@ -52,6 +54,9 @@
 		* [音量控制](development/cplusplus/volume_ctrl.md)
 		* [多媒体播放](development/cplusplus/mediaplayer.md)
 		* [灯光效果](development/cplusplus/lumenflinger.md)
+		* [WiFi控制](development/cplusplus/wpa_ctrl.md)
+		* [电量查询](development/cplusplus/power_ctrl.md)
+		* [系统升级](development/cplusplus/upgrade.md)
 <!--* [安全性](security/overview.md)-->
 <!--	* [概览](security/overview.md)-->
 <!--	* [X] 内核安全性-->

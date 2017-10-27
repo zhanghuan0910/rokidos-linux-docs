@@ -27,6 +27,7 @@
 		* [概览](porting/audio/overview.md)
 		* [X] 术语
 		* [X] 调试
+	* [开机动画](porting/bootanim/bootanim.md)
 	* [X] 蓝牙
 	* [X] 相机
 	* [X] 图形
@@ -50,6 +51,7 @@
 		* [语音合成](development/cplusplus/tts.md)
 		* [音量控制](development/cplusplus/volume_ctrl.md)
 		* [多媒体播放](development/cplusplus/mediaplayer.md)
+		* [灯光效果](development/cplusplus/lumenflinger.md)
 <!--* [安全性](security/overview.md)-->
 <!--	* [概览](security/overview.md)-->
 <!--	* [X] 内核安全性-->

@@ -19,7 +19,7 @@
           python language-pack-en texinfo \
           build-essential g++ git bison flex unzip \
           libssl-dev libxml-simple-perl libxml-sax-perl libxml2-dev libxml2-utils xsltproc \
-          wget bc ccache curl
+          wget bc ccache curl libc6-dev-i386 lib32ncurses5-dev lib32z-dev
 	```
 
 ### 配置USB使用权限

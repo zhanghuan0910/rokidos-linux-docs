@@ -27,26 +27,27 @@
 		* [概览](porting/audio/overview.md)
 		* [X] 术语
 		* [X] 调试
+<!-- 	* [麦克风](porting/mic/overview.md) -->
 	* [开机动画](porting/bootanim/bootanim.md)
 	* [WiFi](porting/wifi/wifi.md) 
 	* [系统升级](porting/upgrade/upgrade.md) 
 	* [X] 蓝牙
 <!--	* [X] 相机 -->
-	* [TBD] 图形
-	* [X] 输入
-		* [X] 概览
-		* [X] 按键布局文件
-		* [X] 按键字符映射文件
-		* [X] 输入设备配置文件
-		* [X] 迁移指南
-		* [X] 键盘设备
-		* [X] 触摸设备
-		* [X] 诊断
-		* [X] Getevent
-		* [X] 验证按键映射
-	* [X] 媒体
+<!-- 	* [TBD] 图形 -->
+<!--	* [X] 输入-->
+<!--		* [X] 概览-->
+<!--		* [X] 按键布局文件-->
+<!--		* [X] 按键字符映射文件-->
+<!--		* [X] 输入设备配置文件-->
+<!--		* [X] 迁移指南-->
+<!--		* [X] 键盘设备-->
+<!--		* [X] 触摸设备-->
+<!--		* [X] 诊断-->
+<!--		* [X] Getevent-->
+<!--		* [X] 验证按键映射-->
+<!-- 	* [X] 媒体 -->
 <!-- 	* [X] 传感器 -->
-	* [X] 存储设备
+<!--	* [X] 存储设备 -->
 * [应用开发](development/overview.md)
 	* [Node.js](development/tutorial-nodejs.md)
 	* [C/C++](development/tutorial-cplusplus.md)

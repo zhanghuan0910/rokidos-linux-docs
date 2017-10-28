@@ -1,6 +1,6 @@
 # 系统升级
 
-RoKidOS 为第三方厂商提供了 OTA 相关方案。
+RokidOS 为第三方厂商提供了 OTA 相关方案。
 
 ## 系统分区
 
@@ -16,7 +16,7 @@ RoKidOS 为第三方厂商提供了 OTA 相关方案。
 6. data;
  
 
-如果开发者或者第三方厂商需要修改系统分区，需要修改分区大小，则需要更改kernel代码dts和对应uboot代码。以A113版本来讲，其余开发板请参考[开发板列表](../../reference/dev_board/board_list.md),对应代码路径如下：
+如果开发者或者第三方厂商需要修改系统分区，需要修改分区大小，则需要更改kernel代码dts和对应uboot代码。以Amlogic/A113开发板来讲，其余开发板到[开发板用户手册](../../reference/dev_board/board_list.md)查询参考，对应代码路径如下：
 
 ```shell
 # dts

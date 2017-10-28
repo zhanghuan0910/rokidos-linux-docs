@@ -72,7 +72,7 @@
 <!--	* [X] 验证启动-->
 <!--* [微调](tuning/overview.md)-->
 * [参考](reference/overview.md)
-	* [开发板列表](reference/dev_board/board_list.md)
-		* [Amlogic/A113](reference/dev_board/amlogic/a113.md)
-		* [Amlogic/S905D](reference/dev_board/amlogic/s905d.md)
+	* [开发板用户手册](reference/dev_board/board_list.md)
+		* [Amlogic/A113 用户手册](reference/dev_board/amlogic/a113.md)
+		* [Amlogic/S905D 用户手册](reference/dev_board/amlogic/s905d.md)
 	* [智能家居接入](https://rokid.github.io/rokid-homebase-docs/)

@@ -45,13 +45,13 @@
 │   │   └── cpio
 │   └── package
 │      ├── android-tools
-│      ├── sdl2
+│      ├── systemd
 │      └── tinyalsa
 ├── build.sh
-├── check_by_jenkins
-├── hardware
 ├── kernel
 │   └── aml-3.14
+├── multimedia
+│   └── libplayer    === disabled by rokid.
 ├── robot
 │   ├── apps
 │   │   ├── bluetooth

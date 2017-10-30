@@ -4,8 +4,8 @@
 * [源代码](source/getting_started/overview.md)
 	* [开始使用](source/getting_started/overview.md)
 		* [概览](source/getting_started/overview.md)
-		* [品牌使用准则](source/getting_started/brand_guidelines.md)
-		* [许可](source/getting_started/licenses.md)
+<!--		* [品牌使用准则](source/getting_started/brand_guidelines.md) -->
+<!-- 		* [许可](source/getting_started/licenses.md) -->
 <!--		* [常见问题解答](source/faq.md) -->
 	* [下载和构建](source/downloading_building/requirements.md)
 		* [概览](source/downloading_building/requirements.md)

@@ -4,7 +4,7 @@ RokidOS 将一些常用 WiFi 控制函数已经封装成接口，并提供通用
 
 ## STATION 模式API
 
-现有基本上所有的 Linux 内核嵌入式 WiFi 设备都支持wpa_supplicant进行 WiFi  STATION 模式的管理和配置。所以 RokidOS 也是将 WiFi 控制封装成 wpa_supplicant 控制接口。第三方开发者也可以移植到其他依赖于 wpa_supplicant 控制的第三方设备中。代码相关路径位于robot/external/wpa_ctrl，常用接口如下：
+现有基本上所有的 Linux 内核嵌入式 WiFi 设备都支持 wpa_supplicant 进行 WiFi STATION 模式的管理和配置。所以 RokidOS 也是将 WiFi 控制封装成 wpa_supplicant 控制接口。第三方开发者也可以移植到其他依赖于 wpa_supplicant 控制的第三方设备中。代码相关路径位于 robot/external/wpa_ctrl，常用接口如下：
 
 
 ```c

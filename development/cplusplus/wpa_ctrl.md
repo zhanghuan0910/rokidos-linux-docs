@@ -1,10 +1,10 @@
 # WiFi控制
 
-ROKIDOS将一些常用wifi控制函数已经封装成接口，并提供通用API方便开发者进行扩展。
+RokidOS 将一些常用 WiFi 控制函数已经封装成接口，并提供通用API方便开发者进行扩展。
 
-## Station模式API
+## STATION 模式API
 
-现有基本上所有的linux内核嵌入式wifi设备都支持wpa_supplicant进行wifi station模式的管理和配置。所以ROKIDOS也是将wifi控制封装成wpa_supplicant控制接口。第三方开发者也可以移植到其他依赖于wpa_supplicant控制的第三方设备中。代码相关路径位于robot/external/wpa_ctrl，常用接口如下：
+现有基本上所有的 Linux 内核嵌入式 WiFi 设备都支持wpa_supplicant进行 WiFi  STATION 模式的管理和配置。所以 RokidOS 也是将 WiFi 控制封装成 wpa_supplicant 控制接口。第三方开发者也可以移植到其他依赖于 wpa_supplicant 控制的第三方设备中。代码相关路径位于robot/external/wpa_ctrl，常用接口如下：
 
 
 ```c
@@ -45,7 +45,7 @@ int wifi_ctrl_recv(char *reply, int *reply_len);
 void wifi_monitor_release();
 ```
 
-我们同时提供了一个通用接口，我们上述所有接口均是通过这个接口来实现的。后续我们也会丰富更多的wifi接口。
+我们同时提供了一个通用接口，我们上述所有接口均是通过这个接口来实现的。后续我们也会丰富更多的 WiFi 接口。
 
 ```c
 // current supplicant cmd
@@ -73,7 +73,7 @@ int wifi_send_command(int cmd, void *value, int val_len, void *res, int res_len)
 还在开发中。。。
 
 ## 配网
-ROKIDOS配套的开发板支持wifi连接internet，系统提供了一些控制wifi连接的接口，配网业务及网络监控服务。设备第一次连接网络需要第三方设备发送wifi相关信息如SSID，PSK和加密方式到设备，第一次联网方式支持如下方式：
+RokidOS 配套的开发板支持 WiFi 连接 internet ，系统提供了一些控制 WiFi 连接的接口，配网业务及网络监控服务。设备第一次连接网络需要第三方设备发送 WiFi 相关信息如 SSID ， PSK 和加密方式到设备，第一次联网方式支持如下方式：
 
 ### 蓝牙配网
 

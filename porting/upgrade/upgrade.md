@@ -4,9 +4,9 @@ RokidOS 为第三方厂商提供了 OTA 相关方案。
 
 ## 系统分区
 
-由于文件系统的问题，线刷的固件包为**aml_upgrade_package.img**，而ota所使用的固件包为**rokid_upgrade_package.img**，二者打包格式不同在于system分区的不同。
+由于文件系统的问题，线刷的固件包为**aml_upgrade_package.img**，而 OTA 所使用的固件包为**rokid_upgrade_package.img**，二者打包格式不同在于 system 分区的不同。
 
-对于采用Amlogic公司芯片方案，系统分区如下:
+对于采用 Amlogic 公司芯片方案，系统分区如下:
 
 1. uboot;
 2. dtb (隐藏分区)；
@@ -16,7 +16,7 @@ RokidOS 为第三方厂商提供了 OTA 相关方案。
 6. data;
  
 
-如果开发者或者第三方厂商需要修改系统分区，需要修改分区大小，则需要更改kernel代码dts和对应uboot代码。以Amlogic/A113开发板来讲，其余开发板到[开发板用户手册](../../reference/dev_board/board_list.md)查询参考，对应代码路径如下：
+如果开发者或者第三方厂商需要修改系统分区，需要修改分区大小，则需要更改 kernel 代码 dts 和对应 uboot 代码。以 Amlogic/A113 开发板来讲，其余开发板到[开发板用户手册](../../reference/dev_board/board_list.md)查询参考，对应代码路径如下：
 
 ```shell
 # dts
@@ -35,9 +35,9 @@ board/amlogic/axg_s420_v1/axg_s420_v1.c
 
 具体ota操作分析如下：
 
-1. 设备通过网络协议获取网络ota升级包(rokid_upgrade_package.img)，存储在data分区；并设置升级参数到misc分区后设备reboot,具体参数如下：
-2. 重启后，进入uboot状态，uboot读取misc分区的标志位，如果判断是升级模式，会把recovery 加载到 内存中，跳转到recovery分区，并修改bootcmds。
-3. recovry分区相当于linux内核+ramfsdist，启动init进程，读取bootcmds，后会执行打包在ramfslist中ota_update进程；
-4. ota_update进程会挂载data分区，后读取boot_cmd结构体，开始解析升级包，以此烧写到对应分区，烧写完成后，重启设备；
+1. 设备通过网络协议获取网络 OTA 升级包(rokid_upgrade_package.img)，存储在 data 分区；并设置升级参数到 misc 分区后设备 reboot，具体参数如下：
+2. 重启后，进入 UBOOT 状态，UBOOT 读取 misc 分区的标志位，如果判断是升级模式，会把 recovery 加载到内存中，跳转到 recovery 分区，并修改 bootcmds。
+3. recovry 分区相当于 Linux内核+ramfsdist，启动 init 进程，读取 bootcmds，后会执行打包在 ramfslist 中 ota_update 进程；
+4. ota_update 进程会挂载 data 分区，后读取 bootcmds 结构体，开始解析升级包，以此烧写到对应分区，烧写完成后，重启设备；
 
 

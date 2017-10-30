@@ -1,7 +1,29 @@
-# Amlogic-S905D
+# Amlogic/S905D
 
-## 开发板外观
-![Rokid S905D 开发板](../../../files/board_amlogic_s905d.jpg)
+## 开发板套件基本参数介绍
+
+* **CPU：** Amlogic S905D A54x4 up to 1.5Ghz<br>
+* **Memory：** 2GB LPDDR3 + 16GB e.MMC<br>
+* **Mic Array：** IIS mic x 4<br>
+* **Audio：**line out 3.5mm<br>
+* **Video：**micro HDMI<br>
+* **Network：**802.11 a/b/g/n/ac<br>
+* **Bluetooth: **BT 4.1/BLE<br>
+* **LED: **RGB LED x 12<br>
+* **DC in：**USB-Type C 5V<br>
+
+## 硬件设计参考资料
+
+* **CPU 板原理图**<br>
+[radk_palm_s905d_cpu_board_sch_v1.1.pdf](https://developer-forum.rokid.com/uploads/default/original/1X/a53d1faf49d0f4b55b6847a1572a5f7ae7a954df.pdf)
+* **MIC 板原理图**<br>
+[radk_palm_4mic_circular_iis_bot_sch_v1.1.pdf](https://developer-forum.rokid.com/uploads/default/original/1X/56d449a8f7dcbfd111be2ea06bd0230bb79aa400.pdf)
+* **Debug 板原理图**<br>
+[radk_palm_debug_board_sch_v1.1.pdf](https://developer-forum.rokid.com/uploads/default/original/1X/6ea48d5c21b57802f5f73c0a29b3362241558bb0.pdf)
+
+## CPU 功能板介绍
+![Rokid AI Dev Kit CPU Board Top Side](../../../files/amlogic/devkit_s905d/cpu_board_top_side.png)
+![Rokid AI Dev Kit CPU Board Bottom Side](../../../files/amlogic/devkit_s905d/cpu_board_bottom_side.png)
 
 ## 代码获取
 

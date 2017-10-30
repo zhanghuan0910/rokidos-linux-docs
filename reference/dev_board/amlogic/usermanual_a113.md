@@ -1,5 +1,30 @@
 # Amlogic/A113
 
+## 开发板套件基本参数介绍
+
+* **CPU：**<br>
+* **Memory：**<br>
+* **Mic Array：** PDM mic x 4(新板)<br>
+* **Mic Array：** PDM mic x 6(旧板)<br>
+* **Audio：**line out 3.5mm<br>
+* **Network：**802.11 a/b/g/n/ac<br>
+* **Bluetooth: **BT 4.1/BLE<br>
+* **LED: **RGB LED x 12<br>
+* **DC in：**USB-Type C 5V<br>
+
+## 硬件设计参考资料
+
+* **CPU 板原理图**<br>
+[radk_palm_a113x_cpu_board_sch_v2.0.pdf](https://developer-forum.rokid.com/uploads/default/original/1X/0c4aa0f8e4278563a7254900a67862d9efaace82.pdf)
+* **MIC 板原理图**<br>
+[radk_palm_4mic_circular_pdm_bot_sch_v1.0.pdf](https://developer-forum.rokid.com/uploads/default/original/1X/4525ea9ef6474e98196a0c72f222a56921bf3ee2.pdf)
+* **Debug 板原理图**<br>
+[radk_palm_debug_board_sch_v1.1.pdf](https://developer-forum.rokid.com/uploads/default/original/1X/6ea48d5c21b57802f5f73c0a29b3362241558bb0.pdf)
+
+## CPU 功能板介绍
+Rokid AI Dev Kit CPU Board Top Side<br>
+Rokid AI Dev Kit CPU Board Bottom Side
+
 ## 代码获取
 
 * repo 是Google官方版本
@@ -35,7 +60,6 @@ repo sync
 │   │   └── ubifs
 │   └── package
 │       ├── android-tools
-│       ├── sdl2
 │       ├── systemd
 │       └── tinyalsa
 ├── build.sh
@@ -66,8 +90,6 @@ repo sync
 │   ├── frameworks
 │   │   └── native
 │   ├── hardware
-│   │   ├── cmake
-│   │   ├── CMakeLists.txt
 │   │   ├── libhardware
 │   │   └── modules
 │   ├── openvoice
@@ -98,7 +120,6 @@ repo sync
     │   ├── buildprop.sh
     │   ├── ci_build.sh
     │   ├── envsetup.sh -> setenv.sh
-    │   ├── Makefile
     │   ├── rokidclean.sh
     │   └── setenv.sh
     ├── Config.in

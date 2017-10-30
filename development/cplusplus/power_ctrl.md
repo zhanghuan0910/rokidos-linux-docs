@@ -1,9 +1,9 @@
 # 电量查询
 
-rokidos提供的电量服务依赖于amlogic电池驱动接口。
+RokidOS 提供的电量服务依赖于 Amlogic 电池驱动接口。
 
 ## 电量API
-rokidos提供了一个电池查询接口，可以实时查询当前电量，相关代码路径：robot/external/power_ctrl
+RokidOS 提供了一个电池查询接口，可以实时查询当前电量，相关代码路径：robot/external/power_ctrl
 
 ```c
 

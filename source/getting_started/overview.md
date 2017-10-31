@@ -23,7 +23,7 @@ RokidOS 是一个针对多种不同设备类型打造的开放源代码以语音
 
 * **Speech Communication Library**
     
-    Rokid语音通讯库，封装了与 Rokid 云服务交互协议，包括自动语音识别(ASR)、自然语言处理(NLP)、(语音合成)TTS 等云端服务。
+    Rokid语音通讯库，封装了与 Rokid 云服务交互协议，包括自动语音识别(ASR)、自然语言处理(NLP)、语音合成(TTS)等云端服务。
 
 * **VUI**
     

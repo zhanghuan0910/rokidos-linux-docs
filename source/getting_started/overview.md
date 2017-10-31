@@ -23,7 +23,7 @@ RokidOS 是一个针对多种不同设备类型打造的开放源代码以语音
 
 * **Speech Communication Library**
     
-    Rokid语音通讯库，封装了与 Rokid 云服务交互协议，包括 ASR、NLP、TTS 等云端服务。
+    Rokid语音通讯库，封装了与 Rokid 云服务交互协议，包括自动语音识别(ASR)、自然语言处理(NLP)、(语音合成)TTS 等云端服务。
 
 * **VUI**
     
@@ -32,21 +32,21 @@ RokidOS 是一个针对多种不同设备类型打造的开放源代码以语音
 ## 系统特性
 * **Linux Native Services**
 	* **systemd** Linux Init System - systemd 管理各种服务进程
-	* **PulseAudio** 提供Audio服务及路由机制
+	* **PulseAudio** 提供 Audio 服务及路由机制
 
 * **Rokid Openvoice SDK**
-	* **Speech SDK** 封装了与Rokid云服务交互协议，包括ASR、NLP、TTS等云端服务
-	* **Blacksiren SDK** 输入麦克风数据，经内部拾音算法及云端服务（调用SpeechSDK），输出语音识别结果、各种拾音事件
+	* **Speech SDK** 封装了与 Rokid 云服务交互协议，包括 ASR、NLP、TTS 等云端服务
+	* **Blacksiren SDK** 输入麦克风数据，经内部拾音算法及云端服务（调用 SpeechSDK ），输出语音识别结果、各种拾音事件
 
 * **Rokid System上的基础组件**
 	* **媒体播放库** 提供媒体播放功能
-	* **Android Binder** 提供Android系统进程间通讯机制
-	* **Android HAL** 提供Android HAL功能
-		* Android HAL 移植到Linux系统，方便实现Mic Array，Led Array，Sensor等
+	* **Android Binder** 提供 Android 系统进程间通讯机制
+	* **Android HAL** 提供 Android HAL 功能
+		* Android HAL 移植到Linux系统，方便实现 Mic Array，Led Array，Sensor 等
 
 * **Rokid System Services/Framework**
-	* **OpenvoiceProc Service** 将Blacksiren封装成服务，维护拾音、唤醒、云端识别解析业务的状态
-	* **Application Manager Service** Rokid语音应用的生命期调度、事件分发框架
+	* **OpenvoiceProc Service** 将 Blacksiren 封装成服务，维护拾音、唤醒、云端识别解析业务的状态
+	* **Application Manager Service** Rokid 语音应用的生命期调度、事件分发框架
 	* **Openvoice App Zygote** 由该进程负责启动所有语音应用
 	* **系统音量控制** 提供系统的音量控制服务
 	* **Input Service** 提供按键、触摸、鼠标事件服务
@@ -67,7 +67,7 @@ RokidOS 是一个针对多种不同设备类型打造的开放源代码以语音
 	* **蓝牙音乐应用**
 
 * **调试开发工具**
-	* **Android ADB** 提供ADB支持，方便开发
+	* **Android ADB** 提供 ADB 支持，方便开发
 	* **手机端蓝牙配网应用** 提供手机端配网及相关功能
 
 

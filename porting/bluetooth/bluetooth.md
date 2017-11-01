@@ -34,15 +34,7 @@ robot/services/btflinger：以上代码包实际所包含的的代码所在
 
 # 更新代码后如果发生编译通不过或者运行时错误的情况
 
-ouououn uyitiuyiouopo
-
-* ```
-  删掉 output/banban_m_a113/build/aml_brcm_bsa-0107_00.26.00/
-
-  删掉 output/banban_m_a113/build/btflinger
-
-  再重新make
-  ```
+      删掉
 
 # 如果模组相同，只是迁移平台：
 

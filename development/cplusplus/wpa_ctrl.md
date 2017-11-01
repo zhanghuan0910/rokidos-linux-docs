@@ -69,7 +69,7 @@ enum {
 int wifi_send_command(int cmd, void *value, int val_len, void *res, int res_len);
 ```
 ## AP模式API
-对于目前支持 ROKIDOS 的几款官方开发板，采用的 WiFi 模组是博通公司的 AP6255 芯片，博通公司的 wifi 芯片 AP 与 STATION 切换需要对网卡驱动进行卸载重装，所以配网方式不建议使用 AP 模式配网，这回造成多次 WiFi 模式的切换。耗时可能比较严重。不过给出以下方法，开发者可以自行配置，进入 AP 模式。
+对于目前支持 ROKIDOS 的几款官方开发板，采用的 WiFi 模组是博通公司的 AP6255 芯片，博通公司的 wifi 芯片 AP 与 STATION 切换需要对网卡驱动进行卸载重装，所以配网方式不建议使用 AP 模式配网，这会造成多次 WiFi 模式的切换，耗时可能比较严重。不过给出以下方法，开发者可以自行配置，进入 AP 模式。
 
 首先，buildroot 需要增加 dnsmasq 的软件包。如果配置对应的 config 文件， 以 A113 来讲，对应路径是: buildroot/configs/banban_m_a113_release_defconfig。
 ``` shell
@@ -78,7 +78,7 @@ BR2_PACKAGE_DNSMASQ_TFTP=y
 BR2_PACKAGE_DNSMASQ_DHCP=y
 ```
 
-如果需要进入 AP 模式，需要依次执行以下命令，对应的 hostapd 和 dnsmasq 没有构造成 systemd service 的模式，开发者如果需要添加，可以参考我们的 supplicant.service 服务进行配置。
+如果需要进入 AP 模式，需要依次执行以下命令，对应的 hostapd 和 dnsmasq 没有提供对应的 systemd service 服务文件，开发者如果需要添加，可以参考我们的 supplicant.service 服务进行配置。
 ``` shell
 # 关闭 wpa_supplicant 服务和 wifimonitor 服务
 systemctl stop supplicant
@@ -90,7 +90,7 @@ rmmod dhd
 # 把 WiFi 驱动加载成 AP 模式
 multi_wifi_load_driver ap 1
 
-# 构造 WiFi AP 参数，其中 ssid 和 wpa_passphrase 分别对应 SSID 和 密码
+# 构造 WiFi AP 参数，其中 ssid 和 wpa_passphrase 分别对应 SSID 和 密码， 例如此配置文件对应的 SSID 是 rokid，密码是 rokidos_psk
 echo "interface=wlan0
 driver=nl80211
 ctrl_interface=/var/run/hostapd
@@ -110,7 +110,7 @@ wpa_pairwise=TKIP CCMP
 rsn_pairwise=CCMP"  > /etc/hostapd_temp.conf
 
 
-# 启动 hostapd, AP 管理软件
+# 启动 hostapd (AP 管理软件)
 hostapd -B /etc/hostapd_temp.conf
 
 # 配置网卡的 IP 地址

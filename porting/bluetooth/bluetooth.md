@@ -32,37 +32,37 @@ robot/services/btflinger：以上代码包实际所包含的的代码所在
 
 │   ├── bluetooth\_test.c
 
-# 更新代码后如果发生编译通不过或者运行时错误的情况
+# 更新代码后如果发生编译通不过或者运行时错误的情况：
 
-    情况
+* 删掉 output/banban\_m\_a113/build/aml\_brcm\_bsa-0107\_00.26.00/
+* 删掉 output/banban\_m\_a113/build/btflinger/
+* 再重新make
 
 # 如果模组相同，只是迁移平台：
 
-```
- 将相关代码目录直接覆盖过去即可：
+将相关代码目录直接覆盖过去即可：
 
-  buildroot/package/aml_brcm_bsa
+buildroot/package/aml\_brcm\_bsa
 
-  vendor/broadcom/brcm-bsa
+vendor/broadcom/brcm-bsa
 
-  rokid_br_external/package/btflinger
+rokid\_br\_external/package/btflinger
 
-  robot/services/btflinger
-```
+robot/services/btflinger
 
 # 如果模组切换，则还需要增加的步骤：
 
-###### 修改robot/services/btflinger/src/bsa\_server\_service\_ctl.sh
+修改robot/services/btflinger/src/bsa\_server\_service\_ctl.sh
 
 ![](/files/bluetooth/fw.png)
 
-###### 将红框处的路径修改成新的模组的固件的路径即可
+将红框处的路径修改成新的模组的固件的路径即可
 
-###### 注意：目前只支持在博通的模组间切换，如果是非博通的模组目前暂时不支持。
+注意：目前只支持在博通的模组间切换，如果是非博通的模组目前暂时不支持。
 
 # 如果厂商需要定义自己的BLE的UUID：
 
-###### 修改rokid\_br\_external/configs/rokid\_common\_packages.frag文件
+修改rokid\_br\_external/configs/rokid\_common\_packages.frag文件
 
 ![](/files/bluetooth/uuid.png)
 

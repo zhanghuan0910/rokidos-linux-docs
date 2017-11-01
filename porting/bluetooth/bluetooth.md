@@ -58,19 +58,21 @@ robot/services/btflinger：以上代码包实际所包含的的代码所在
 
 # 如果模组切换，则还需要增加的步骤：
 
-```
- 修改robot/services/btflinger/src/bsa\_server\_service\_ctl.sh
-![btfirmware](../../files/bluetooth/fw.png)
-将红框处的路径修改成新的模组的固件的路径即可
+       修改robot/services/btflinger/src/bsa\\_server\\_service\\_ctl.sh![](/files/bluetooth/fw.png)             
 
-注意：目前只支持在博通的模组间切换，如果是非博通的模组目前暂时不支持。
-```
+      将红框处的路径修改成新的模组的固件的路径即可
+
+      注意：目前只支持在博通的模组间切换，如果是非博通的模组目前暂时不支持。
+
+
 
 # 如果厂商需要定义自己的BLE的UUID：
 
-```
- 修改rokid\_br\_external/configs/rokid\_common\_packages.frag文件
-```
+        修改rokid\\_br\\_external/configs/rokid\\_common\\_packages.frag文件
+
+         ![](/files/bluetooth/uuid.png)
+
+
 
 
 

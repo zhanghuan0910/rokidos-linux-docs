@@ -34,7 +34,7 @@ robot/services/btflinger：以上代码包实际所包含的的代码所在
 
 # 更新代码后如果发生编译通不过或者运行时错误的情况
 
-进口国空间感慨， 高科技高考结构化
+进口国空间感慨， 高科技高考结构化outyreyutiyoi
 
 * ```
   删掉 output/banban_m_a113/build/aml_brcm_bsa-0107_00.26.00/

@@ -70,13 +70,9 @@ robot/services/btflinger：以上代码包实际所包含的的代码所在
 
 ###### 修改rokid\_br\_external/configs/rokid\_common\_packages.frag文件
 
- ![](/files/bluetooth/uuid.png)
+![](/files/bluetooth/uuid.png)
 
-```
-    修改rokid_br_external/configs/rokid_common_packages.frag文件
 
-     ![](../../files/bluetooth/uuid.png)
-```
 
 
 

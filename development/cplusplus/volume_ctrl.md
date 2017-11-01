@@ -3,7 +3,7 @@
 这是一个音量控制的接口，可以控制整体音量，也可以控制单个通道的音量。下面是头文件：
 
 ```c
-#include <rokid/vol_ctrl/volumecontrol.h>
+#include <vol_ctrl/volumecontrol.h>
 ```
 
 除了要 `include` 头文件外，还需要链接 `-lrkvolumecontrol.so`。
@@ -31,7 +31,7 @@ int get_app_volume(char* name)
 #include <stdio.h>
 #include <strings.h>
 
-#include <rokid/vol_ctrl/volumecontrol.h>
+#include <vol_ctrl/volumecontrol.h>
 
 int main(int argc, char** argv)
 {

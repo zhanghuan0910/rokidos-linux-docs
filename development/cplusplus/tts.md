@@ -7,7 +7,7 @@
 客户端头文件目录位于：
 
 ```c
-#include <rokid/tts/tts_client.h>
+#include <tts/tts_client.h>
 ```
 
 除了要 `include` 头文件外，还需要链接 `-lrktts`。
@@ -50,7 +50,7 @@ void (*onError)(int id, int err, void* userdata);
 ## 示例
 
 ```c
-#include <rokid/tts/tts_client.h>
+#include <tts/tts_client.h>
 
 void onStart(int id, void* userdata) {
 }

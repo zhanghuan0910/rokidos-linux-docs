@@ -2,10 +2,9 @@
 
 ## 开发板套件基本参数介绍
 
-* **CPU：**<br>
-* **Memory：**<br>
-* **Mic Array：** PDM mic x 4(新板)<br>
-* **Mic Array：** PDM mic x 6(旧板)<br>
+* **CPU：** Amlogic A113X A53x4 up to 1.5Ghz<br>
+* **Memory：** 256MB DDR3 + 512MB Nand Flash<br>
+* **Mic Array：** PDM mic x 4<br>
 * **Audio：**line out 3.5mm<br>
 * **Network：**802.11 a/b/g/n/ac<br>
 * **Bluetooth: **BT 4.1/BLE<br>
@@ -22,8 +21,15 @@
 [radk_palm_debug_board_sch_v1.1.pdf](https://developer-forum.rokid.com/uploads/default/original/1X/6ea48d5c21b57802f5f73c0a29b3362241558bb0.pdf)
 
 ## CPU 功能板介绍
-Rokid AI Dev Kit CPU Board Top Side<br>
-Rokid AI Dev Kit CPU Board Bottom Side
+![Rokid AI Dev Kit CPU Board Top Side](../../../files/amlogic/devkit_a113/cpu_board_top_side.jpg)
+![Rokid AI Dev Kit CPU Board Bottom Side](../../../files/amlogic/devkit_a113/cpu_board_bottom_side.jpg)
+
+## 软件设计参考资料
+* **A113 软件用户向导**<br>
+[A113X_QRM V0.9 20170810-amlogic](https://developer-forum.rokid.com/uploads/default/original/1X/470d93655b73f35d354430086b59219c2e620b1f.pdf)
+
+* **A113 GPIO 用户向导**<br>
+[Amlogic A113 GPIO Pinctrl User Manual V0.3-amlogic](https://developer-forum.rokid.com/uploads/default/original/1X/470d93655b73f35d354430086b59219c2e620b1f.pdf)
 
 ## 代码获取
 

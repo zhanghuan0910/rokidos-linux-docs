@@ -25,8 +25,32 @@
 ![Rokid AI Dev Kit CPU Board Top Side](../../../files/amlogic/devkit_s905d/cpu_board_top_side.png)
 ![Rokid AI Dev Kit CPU Board Bottom Side](../../../files/amlogic/devkit_s905d/cpu_board_bottom_side.png)
 
+## 软件设计参考资料
+* **S905D 软件用户向导**<br>
+[S905D_QRM V0.8 20170628-amlogic](https://developer-forum.rokid.com/uploads/default/original/1X/e154b6baff977acd71109a7ad8dc13c9f7c7c0cb.pdf)
+
+* **S905D GPIO 用户向导**<br>
+[Amlogic S905D GPIO User Guide V0.2-amlogic](https://developer-forum.rokid.com/uploads/default/original/1X/9de6cef0bd79d572022c3fbfc97f94f2e4f731e5.pdf)
+
 ## 代码获取
 
+* repo 是Google官方版本
+
+```
+repo init -u ssh://your-account@openai.rokid-inc.com:29418/amlogic_a1xx_linux/manifest -m rokidbase.xml
+```
+
+* repo 是Rokid 修正版本
+
+```
+repo init -u ssh://your-account@openai.rokid-inc.com:29418/amlogic_a1xx_linux/manifest -m rokidbase.xml --repo-url=ssh://your-account@openai.rokid-inc.com/tools/repo --no-repo-verify
+```
+
+* 下载代码树
+```
+repo sync
+``` 
+	
 ## Rokid对上游代码的修改目录
 ```
 .

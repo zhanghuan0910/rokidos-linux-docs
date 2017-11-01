@@ -31,7 +31,7 @@
 	* [开机动画](porting/bootanim/bootanim.md)
 	* [WiFi](porting/wifi/wifi.md) 
 	* [系统升级](porting/upgrade/upgrade.md) 
-	* [X] 蓝牙
+	* [蓝牙](porting/bluetooth/bluetooth.md)
 <!--	* [X] 相机 -->
 <!-- 	* [TBD] 图形 -->
 <!--	* [X] 输入-->

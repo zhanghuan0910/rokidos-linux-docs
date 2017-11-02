@@ -4,8 +4,7 @@ RokidOS 将一些常用 WiFi 控制函数已经封装成接口，并提供通用
 
 ## STATION 模式API
 
-现有基本上所有的 Linux 内核嵌入式 WiFi 设备都支持 wpa_supplicant 进行 WiFi STATION 模式的管理和配置。所以 RokidOS 也是将 WiFi 控制封装成 wpa_supplicant 控制接口。第三方开发者也可以移植到其他依赖于 wpa_supplicant 控制的第三方设备中。代码相关路径位于 robot/external/wpa_ctrl，常用接口如下：
-
+现有基本上所有的 Linux 内核嵌入式 WiFi 设备都支持 wpa\_supplicant 进行 WiFi STATION 模式的管理和配置。所以 RokidOS 也是将 WiFi 控制封装成 wpa\_supplicant 控制接口。第三方开发者也可以移植到其他依赖于 wpa\_supplicant 控制的第三方设备中。代码相关路径位于 robot/external/wpa\_ctrl，常用接口如下：
 
 ```c
 // connect network ssid : net->ssid psk: net->psk key :net->key_mgmt
@@ -68,18 +67,22 @@ enum {
 
 int wifi_send_command(int cmd, void *value, int val_len, void *res, int res_len);
 ```
+
 ## AP模式API
+
 对于目前支持 ROKIDOS 的几款官方开发板，采用的 WiFi 模组是博通公司的 AP6255 芯片，博通公司的 wifi 芯片 AP 与 STATION 切换需要对网卡驱动进行卸载重装，所以配网方式不建议使用 AP 模式配网，这会造成多次 WiFi 模式的切换，耗时可能比较严重。不过给出以下方法，开发者可以自行配置，进入 AP 模式。
 
-首先，buildroot 需要增加 dnsmasq 的软件包。如果配置对应的 config 文件， 以 A113 来讲，对应路径是: buildroot/configs/banban_m_a113_release_defconfig。
-``` shell
+首先，buildroot 需要增加 dnsmasq 的软件包。如果配置对应的 config 文件， 以 A113 来讲，对应路径是: buildroot/configs/banban\_m\_a113\_release\_defconfig。
+
+```shell
 BR2_PACKAGE_DNSMASQ=y
 BR2_PACKAGE_DNSMASQ_TFTP=y
 BR2_PACKAGE_DNSMASQ_DHCP=y
 ```
 
 如果需要进入 AP 模式，需要依次执行以下命令，对应的 hostapd 和 dnsmasq 没有提供对应的 systemd service 服务文件，开发者如果需要添加，可以参考我们的 supplicant.service 服务进行配置。
-``` shell
+
+```shell
 # 关闭 wpa_supplicant 服务和 wifimonitor 服务
 systemctl stop supplicant
 systemctl stop wifimonitor
@@ -120,13 +123,13 @@ ifconfig wlan0 192.168.2.1
 dnsmasq -iwlan0  --dhcp-option=3,192.168.2.1 --dhcp-range=192.168.2.50,192.168.2.200,12h -p100
 ```
 
-
-
-
-
 ## 配网
+
 RokidOS 配套的开发板支持 WiFi 连接 internet ，系统提供了一些控制 WiFi 连接的接口，配网业务及网络监控服务。设备第一次连接网络需要第三方设备发送 WiFi 相关信息如 SSID ， PSK 和加密方式到设备，第一次联网方式支持如下方式：
 
 ### 蓝牙配网
 
 ### AP模式配网
+
+
+

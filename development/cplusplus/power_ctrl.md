@@ -3,10 +3,10 @@
 RokidOS 提供的电量服务依赖于 Amlogic 电池驱动接口。
 
 ## 电量API
-RokidOS 提供了一个电池查询接口，可以实时查询当前电量，相关代码路径：robot/external/power_ctrl
+
+RokidOS 提供了一个电池查询接口，可以实时查询当前电量，相关代码路径：robot/external/power\_ctrl
 
 ```c
-
 struct power_state {
     int status;              // 电池状态：BATTERY_STATUS_STATE
     int capacity;            // 电池当前容量：
@@ -22,6 +22,7 @@ int power_get_property(struct power_state *state);
 ```
 
 ## 查询demo
+
 ```c
 #include "power_ctrl.h"
 
@@ -40,3 +41,6 @@ int main(int argc, char **argv)
     return 0;
 }
 ```
+
+
+

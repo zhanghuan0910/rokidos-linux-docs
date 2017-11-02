@@ -66,3 +66,15 @@ robot/services/btflinger
 
 ![](/files/bluetooth/uuid.png)
 
+# 如何确认蓝牙服务已经正常：
+
+   ADB shell中敲入以下命令：
+
+* systemctl stop bsa\_server
+* systemctl stop btflinger
+* btflinger\(此时会有log出现，可以检查是否出错）
+
+  另外开一个adb shell
+
+
+

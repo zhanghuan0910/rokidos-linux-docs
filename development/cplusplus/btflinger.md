@@ -4,31 +4,31 @@ btflinger是RokidOS提供的蓝牙服务
 
 # 以下为相关的接口：
 
-    int bluetooth\_rokid\_open\(char \*name\);
+```
+int bluetooth_rokid_open(char *name);//打开蓝牙
 
-int bluetooth\_rokid\_close\(void\);
+int bluetooth_rokid_close(void);//关闭蓝牙
 
-int bluetooth\_rokid\_use\_a2dp\(void\);
+int bluetooth_rokid_use_ble(char *name);//使用BLE服务
 
-int bluetooth\_rokid\_a2dp\_query\(void\);
+int bluetooth_rokid_get_ble_rsp(struct bt_ble_rsp_msg  *message);//获取BLE client端输入的信息
 
-int bluetooth\_rokid\_use\_a2dp\_link\(char choice\);
+int bluetooth_rokid_use_ble_close(void);//关闭BLE服务
 
-int bluetooth\_rokid\_use\_a2dp\_sink\(void\);
+int bluetooth_rokid_use_a2dp_sink(void);/使用a2dp sink服务
 
-int bluetooth\_rokid\_use\_ble\(char \*name\);
+int bluetooth_rokid_use_avrcp_cmd(enum bluetooth_avrcp_cmd cmd);//使用avrcp命令,a2dp sink打开之后才可使用
 
-int bluetooth\_rokid\_use\_ble\_close\(void\);
+```
 
-int bluetooth\_rokid\_use\_avrcp\_cmd\(enum bluetooth\_avrcp\_cmd cmd\);
+以上各个API的参数在接口头文件中有详细说明（btflinger\_api.h\)。
 
-int bluetooth\_rokid\_send\_a2dp\_rsp\(bd\_g bd\_gr\);
+调用的时候需要注意顺序：
 
-int bluetooth\_rokid\_send\_ble\_rsp\(unsigned char \*value, unsigned short length\);
+```
+bluetooth_rokid_use_ble  ---> bluetooth_rokid_get_ble_rsp  ---> bluetooth_rokid_use_ble_close
+bluetooth_rokid_open     ---> bluetooth_rokid_use_a2dp_sink---> bluetooth_rokid_close
+```
 
-int bluetooth\_rokid\_get\_ble\_rsp\(struct bt\_ble\_rsp\_msg  \*message\);
-
-int bluetooth\_rokid\_get\_a2dp\_rsp\(struct bt\_a2dp\_rsp\_msg \* message\);
-
-
+ BLE单独开关接口，只有关掉BLE以后，才可使用其他服务，比如a2dp sink。同理，只有其他服务关闭以后，才能使用BLE。
 

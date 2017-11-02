@@ -68,13 +68,17 @@ robot/services/btflinger
 
 # 如何确认蓝牙服务已经正常：
 
-   ADB shell中敲入以下命令：
+ADB shell中敲入以下命令：
 
 * systemctl stop bsa\_server
 * systemctl stop btflinger
 * btflinger\(此时会有log出现，可以检查是否出错）
 
-  另外开一个adb shell
+  另外开一个adb shell：
+
+* bluetooth\_test
+
+    然后可以选择各个接口进行验证
 
 
 

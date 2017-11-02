@@ -74,11 +74,11 @@ ADB shell中敲入以下命令：
 * systemctl stop btflinger
 * btflinger\(此时会有log出现，可以检查是否出错）
 
-  另外开一个adb shell：
+重新开一个adb shell窗口，敲入：
 
 * bluetooth\_test
 
-    然后可以选择各个接口进行验证
+  然后会有列表显示出来，可以选择各个接口进行验证（需要和 应用开发--&gt; C/C++ ---&gt; 蓝牙服务章节联系起来一起理解，分析）
 
 
 

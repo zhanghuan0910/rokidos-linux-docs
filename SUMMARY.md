@@ -58,6 +58,7 @@
 		* [WiFi控制](development/cplusplus/wpa_ctrl.md)
 		* [电量查询](development/cplusplus/power_ctrl.md)
 		* [系统升级](development/cplusplus/upgrade.md)
+		* [蓝牙服务](development/cplusplus/btflinger.md)
 <!--* [安全性](security/overview.md)-->
 <!--	* [概览](security/overview.md)-->
 <!--	* [X] 内核安全性-->

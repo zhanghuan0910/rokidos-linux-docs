@@ -1,6 +1,6 @@
-# RokidOS 源代码
+# RokidOS 源代码 #
 
-RokidOS 是一个针对多种不同设备类型打造的开放源代码以语音交互为特色的软件堆栈。RokidOS 主要目的是为运营商、设备制造商、DesignHouse 和开发者创造一个开放的软件平台，使他们能够将创新理念变为现实，并推出能够卓有成效地改善用户移动体验的真实产品。
+RokidOS 是一个针对多种不同设备类型打造的开放源代码以语音交互为特色的软件堆栈。RokidOS 主要目的是为运营商、设备制造商、DesignHouse 和开发者创造一个开放的软件平台，使他们能够将创新理念变为现实，并推出能够卓有成效地改善用户体验的真实产品。
 
 ## 系统架构图
 ![Rokid_Linux_Architecture](../../files/RokidOS_Architecture-1.png)

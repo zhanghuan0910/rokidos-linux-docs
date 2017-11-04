@@ -30,7 +30,9 @@
         "pageNumbers": false,
         "paperSize": "a4"
     },
-    "plugins": ["expandable-chapters-small"],
+    "plugins": [
+        "expandable-chapters-interactive"
+    ],
     "title": "RokidOS 开放源码项目",
     "variables": {}
 }

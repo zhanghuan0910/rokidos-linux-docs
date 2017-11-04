@@ -1,13 +1,13 @@
 # 目录
 
 * [你好，开发者！](README.md)
-* 源代码
-	* 开始使用
-		* [概览](source/getting_started/overview.md)
+* [RokidOS 入门](source/getting_started/overview.md)
+<!--	* [开始使用](source/getting_started/overview.md) -->
+<!--		* [概览](source/getting_started/overview.md) -->
 <!--		* [品牌使用准则](source/getting_started/brand_guidelines.md) -->
 <!-- 		* [许可](source/getting_started/licenses.md) -->
 <!--		* [常见问题解答](source/faq.md) -->
-	* [下载和构建](source/downloading_building/requirements.md)
+	* 下载和构建
 		* [概览](source/downloading_building/requirements.md)
 		* [搭建编译环境](source/downloading_building/build_env.md)
 		* [下载源代码](source/downloading_building/downloading_codes.md)

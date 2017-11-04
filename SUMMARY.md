@@ -1,8 +1,8 @@
 # 目录
 
 * [你好，开发者！](README.md)
-* [源代码](source/getting_started/overview.md)
-	* [开始使用](source/getting_started/overview.md)
+* 源代码
+	* 开始使用
 		* [概览](source/getting_started/overview.md)
 <!--		* [品牌使用准则](source/getting_started/brand_guidelines.md) -->
 <!-- 		* [许可](source/getting_started/licenses.md) -->
@@ -23,7 +23,7 @@
 <!--		* [X] 报告错误	-->
 <!--	* [X]社区 -->
 * [系统移植](porting/overview.md)
-	* [音频](porting/audio/overview.md)
+	* 音频
 		* [概览](porting/audio/overview.md)
 		* [X] 术语
 		* [X] 调试

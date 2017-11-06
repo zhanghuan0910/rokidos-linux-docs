@@ -70,7 +70,6 @@ robot/services/btflinger
 
 ADB shell中敲入以下命令：
 
-* systemctl stop bsa\_server
 * systemctl stop btflinger
 * btflinger\(此时会有log出现，可以检查是否出错）
 
@@ -79,6 +78,24 @@ ADB shell中敲入以下命令：
 * bluetooth\_test
 
   然后会有列表显示出来，可以选择各个接口进行验证（需要和 应用开发--&gt; C/C++ ---&gt; 蓝牙服务章节联系起来一起理解，分析）
+
+    Exa\(测试BLE是否正常\):
+
+       在bluetooth\_test列表中：
+
+       选择：1.ble 
+
+                  2.ble rsp
+
+                  3.手机上用BLEdebuger软件搜，能搜到my bt ble test device这个设备，点进去，会看见3个服务。选择第3个服务，点进去，选择write， 填入字符
+
+                  4.bluetooth\_test界面会打印出收到的字符。
+
+                  证明BLE 服务没有问题。
+
+
+
+        
 
 
 

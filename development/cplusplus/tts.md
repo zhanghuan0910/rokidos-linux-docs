@@ -27,7 +27,7 @@ void tts_cancel(int id, void* userdata);
 void tts_set(struct tts_callback *func);
 // tts设置的接口，参数func代表要实现的接口
 
-void tts_destory();
+void tts_destroy();
 // tts退出接口
 ```
 
@@ -64,7 +64,7 @@ void onError(int id, int err, void* userdata) {
 int main(int argc, char** argv) {
   int id;
   int complte;
-  struct tts_callback func = {
+  tts_callback_t func = {
     onStart, onCancel, onComplete, onError
   };
   tts_init();

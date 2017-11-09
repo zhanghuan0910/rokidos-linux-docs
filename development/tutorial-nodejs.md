@@ -46,7 +46,7 @@ module.exports = require('@rokid/vui')({
 
 ```js
 const tts = require('@rokid/tts');
-tts.play('text to speech');
+tts.say('text to speech');
 ```
 
 该模块提供以下方法：

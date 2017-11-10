@@ -42,6 +42,13 @@ int wifi_ctrl_recv(char *reply, int *reply_len);
 
 // close monitor socket
 void wifi_monitor_release();
+
+// disable network id 
+int wifi_disable_network(int *id);
+
+// disable all network
+int wifi_disable_all_network();
+
 ```
 
 我们同时提供了一个通用接口，我们上述所有接口均是通过这个接口来实现的。后续我们也会丰富更多的 WiFi 接口。

@@ -8,29 +8,20 @@ rokid\_br\_external/package/btflinger：蓝牙的service的代码包，主要是
 
 robot/services/btflinger：以上代码包实际所包含的的代码所在
 
-├── api                                             接口文件
-
-│   ├── bluetooth\_msgque.c
-
-│   ├── btflinger\_api.c
-
-├── include                                     接口相关头文件
-
-│   ├── bluetooth\_msgque.h
-
-│   └── btflinger\_api.h
-
-├── src                                            service源代码，启动脚本。 源代码暂时不开放，只提供bin文件
-
-│   ├── bsa\_server\_service\_ctl.sh
-
-│   ├── btflinger
-
-│   ├── bt\_service\_ctl.sh
-
-├── test                                           模块测试文件，接口的调用方法可以参考此文件
-
-│   ├── bluetooth\_test.c
+```shell
+├── api                              接口文件
+│   ├── bluetooth_msgque.c
+│   └── btflinger_api.c
+├── include                          接口相关头文件
+│   ├── bluetooth_msgque.h           
+│   └── btflinger_api.h              
+├── src                              service源代码，启动脚本。 源代码暂时不开放，只提供bin文件
+│   ├── bsa_server_service_ctl.sh
+│   ├── btflinger
+│   └── bt_service_ctl.sh
+└── test                             模块测试文件，接口的调用方法可以参考此文件
+    └── bluetooth_test.c
+```
 
 # 更新代码后如果发生编译通不过或者运行时错误的情况：
 

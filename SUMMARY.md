@@ -56,6 +56,7 @@
 		* [多媒体播放](development/cplusplus/mediaplayer.md)
 		* [灯光效果](development/cplusplus/lumenflinger.md)
 		* [WiFi控制](development/cplusplus/wpa_ctrl.md)
+		* [输入服务](development/cplusplus/inputflinger.md)
 		* [电量查询](development/cplusplus/power_ctrl.md)
 		* [系统升级](development/cplusplus/upgrade.md)
 		* [蓝牙](development/cplusplus/btflinger.md)

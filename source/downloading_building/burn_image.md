@@ -24,8 +24,8 @@ output/<开发板型号>/images
 ```
 
 * 官方刷机方式
-	1. 安装 Amlogic 官方刷机工具( Windows 版本)<br>
-		具体安装步骤，请参阅 [Amlogic官方刷机工具](../../files/amlogic/AmlUSBBurning.pdf)。
+	1. 安装 [Amlogic 官方刷机工具](https://scm-deps-library.rokid-inc.com/linux/buildroot_dl_aml/tools/aml_burn_img_tool_v2.1.2.exe)<br>
+		具体安装步骤，请参阅 [Amlogic 官方刷机工具使用教程](../../files/amlogic/AmlUSBBurning.pdf)。
 	2. 选择刷机镜像<br>
 		打开Amlogic 刷机工具，选择菜单中的"**文件**"->"**导入烧录包**"，在弹出的文件对话框中选择 "**aml_upgrade_package.img**" 文件。 
 	3. 进入刷机模式<br>

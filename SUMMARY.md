@@ -25,8 +25,8 @@
 * [系统移植](porting/overview.md)
 	* 音频
 		* [概览](porting/audio/overview.md)
-		* [X] 术语
-		* [X] 调试
+		* [术语](porting/audio/terminology.md)
+<!-- 		* [X] 调试 -->
 <!-- 	* [麦克风](porting/mic/overview.md) -->
 	* [开机动画](porting/bootanim/bootanim.md)
 	* [WiFi](porting/wifi/wifi.md) 

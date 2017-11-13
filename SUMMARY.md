@@ -31,7 +31,7 @@
 	* [开机动画](porting/bootanim/bootanim.md)
 	* [WiFi](porting/wifi/wifi.md) 
 	* [系统升级](porting/upgrade/upgrade.md) 
-	* [蓝牙](porting/bluetooth/bluetooth.md)
+	* [蓝牙服务](porting/bluetooth/bluetooth.md)
 <!--	* [X] 相机 -->
 <!-- 	* [TBD] 图形 -->
 <!--	* [X] 输入-->
@@ -58,7 +58,7 @@
 		* [WiFi控制](development/cplusplus/wpa_ctrl.md)
 		* [电量查询](development/cplusplus/power_ctrl.md)
 		* [系统升级](development/cplusplus/upgrade.md)
-		* [蓝牙服务](development/cplusplus/btflinger.md)
+		* [蓝牙](development/cplusplus/btflinger.md)
 <!--* [安全性](security/overview.md)-->
 <!--	* [概览](security/overview.md)-->
 <!--	* [X] 内核安全性-->
@@ -73,7 +73,7 @@
 <!--	* [X] SELinux-->
 <!--	* [X] 验证启动-->
 <!--* [微调](tuning/overview.md)-->
-* [参考](reference/overview.md)
+* 参考
 	* [开发板用户手册](reference/dev_board/board_list.md)
 		* [Amlogic/A113 用户手册](reference/dev_board/amlogic/usermanual_a113.md)
 		* [Amlogic/S905D 用户手册](reference/dev_board/amlogic/usermanual_s905d.md)

@@ -14,48 +14,34 @@
 
 ### C++ 接口使用说明
 
-* MediaPlayer
-
+* MediaPlayer<br>
 媒体播放类的接口与 Android 系统的媒体播放器接口保持一致，主要接口如下：
 
 	* setDataSource<br>
 	设置播放源，可以是本地文件或URL地址
-
 	* setListener<br>
-    	可以设置外部侦听器
-
+	可以设置外部侦听器
 	* prepare<br>
 	同步等待数据缓冲，以便足够一次播放
-
 	* prepareAsync<br>
 	异步数据缓冲，侦听器能接收到 PREPARED 事件，表示缓存Ready，可以调用 start 开始播放
-
 	* start<br>
 	调用开始播放
-
 	* stop<br>
 	停止播放
-
 	* pause<br>
 	暂停播放
-
 	* isPlaying<br>
 	是否正在播放
-
 	* seekTo<br>
 	跳到指定位置播放
-
 	* getCurrentPosition<br>
 	获取当前播放位置(时间)
-
 	* getDuration<br>
 	获取媒体的播放长度(时间）
-
 	* reset()<br>
 	<br>
-    	
 	* setLooping<br>
 	<br>
-
 	* isLooping<br>
 	<br>

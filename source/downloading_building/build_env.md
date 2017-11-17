@@ -22,6 +22,10 @@
           wget bc ccache curl libc6-dev-i386 lib32ncurses5-dev lib32z-dev
 	```
 
+
+>注意：buildroot 编译 cmake 过程中，如果 OpenSSL 为1.1.0会出现报错，建议各位开发者使用**1.0.1f**的 OpenSSL 版本。
+
+
 ### 配置USB使用权限
 
 为了方便开发者开发过程中对设备软件进行更新或系统配置，我们在 RokidOS 系统上移植了Android的adbd服务，为保障您能正常使用 adb 连接到设备，请您按照[USB 设备识别配置](http://snowdream.github.io/51-android/)中介绍的方法来配置您的系统，让 Ubuntu 能正确识别RokidOS 的开发板。

@@ -67,6 +67,7 @@ output/<开发板型号>/images
 
 		* 开发板是 Linux 系统<br>
 		在PC端执行如下指令：
+		(注意 A113 开发板使用 fastboot，需要先做擦除动作,如擦除 boot 分区，fastboot erase boot，并且 dtb 暂时不能单独烧录)
 		```
 		fastboot flash bootloader u-boot.bin
 		fastboot flash dtb <开发板型号>.dtb

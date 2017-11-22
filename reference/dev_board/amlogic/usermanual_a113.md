@@ -36,13 +36,13 @@
 * repo 是Google官方版本
 
 ```
-repo init -u ssh://your-account@openai.rokid-inc.com:29418/amlogic_a113_audio/manifest -m rokidbase.xml
+repo init -u ssh://your-account@openai.rokid.com:29418/amlogic_a113_audio/manifest -m rokidbase.xml
 ```
 
 * repo 是Rokid 修正版本
 
 ```
-repo init -u ssh://your-account@openai.rokid-inc.com:29418/amlogic_a113_audio/manifest -m rokidbase.xml --repo-url=ssh://your-account@openai.rokid-inc.com/tools/repo --no-repo-verify
+repo init -u ssh://your-account@openai.rokid.com:29418/amlogic_a113_audio/manifest -m rokidbase.xml --repo-url=ssh://your-account@openai.rokid.com/tools/repo --no-repo-verify
 ```
 
 * 下载代码树

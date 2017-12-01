@@ -90,4 +90,24 @@ output/<开发板型号>/images
 
 [TBD]
 
+## 开发板镜像下载地址
+首先要查看开发板套件上的麦克风板是 6mic 还是 4mic，CPU 是 A113 还是 905D
+镜像地址直接拷贝到浏览器即可下载
 
+A113 4mic版本 Linux镜像
+
+```
+ftp://ftp-customer.rokid-inc.com:9921/images/amlogic_a113_audio/amlogic_linux_audio_baba_m2_a113_dev/dev/107/
+```
+
+A113 6mic版本 Linux镜像
+
+```
+ftp://ftp-customer.rokid-inc.com:9921/images/amlogic_a113_audio/amlogic_linux_audio_baba_m_a133_dev/dev/210/
+```
+
+905D 4mic版本 Linux镜像
+
+```
+ftp://ftp-customer.rokid-inc.com:9921/images/amlogic_a1xx_linux/amlogic_a1xx_linux_nana_t2_s905d_dev/dev/65/
+```

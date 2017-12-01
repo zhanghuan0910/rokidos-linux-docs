@@ -46,7 +46,6 @@ RokidOS 是一个针对多种不同设备类型打造的开放源代码以语音
 
 * **Rokid System Services/Framework**
 	* **OpenvoiceProc Service** 将 Blacksiren 封装成服务，维护拾音、唤醒、云端识别解析业务的状态
-	* **Application Manager Service** Rokid 语音应用的生命期调度、事件分发框架
 	* **Openvoice App Zygote** 由该进程负责启动所有语音应用
 	* **系统音量控制** 提供系统的音量控制服务
 	* **Input Service** 提供按键、触摸、鼠标事件服务
@@ -59,6 +58,7 @@ RokidOS 是一个针对多种不同设备类型打造的开放源代码以语音
 	* **蓝牙配网服务** 通过蓝牙BLE来配置Wifi网络
 
 * **Rokid Node.js Runtime**
+	* **Voice User Interface** Rokid 语音交互接口(VUI)，应用的生命期调度、事件分发框架
 
 * **Rokid System Apps**
 	* **CloudAppAgent** 云应用通用客户端

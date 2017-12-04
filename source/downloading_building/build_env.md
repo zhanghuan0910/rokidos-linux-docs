@@ -47,7 +47,7 @@ docker pull siokagami/rokidos-linux-make
 ### 在容器中运行Docker镜像
 
 ```
- docker run -it siokagami/rokidos-linux-make:v0.1.0
+ docker run -it siokagami/rokidos-linux-make:v0.3.0
 ```
 
 

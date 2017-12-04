@@ -25,6 +25,32 @@
 
 >注意：buildroot 编译 cmake 过程中，如果 OpenSSL 为1.1.0会出现报错，建议各位开发者使用**1.0.1f**的 OpenSSL 版本。
 
+### Docker
+
+为了统一编译环境，现提供Docker镜像，用户可直接获取Docker镜像进行编译
+
+#### 添加Docker国内镜像
+
+因Docker国外源速度缓慢，建议用户添加Docker国内镜像加速。网址如下
+```
+https://www.docker-cn.com/registry-mirror
+```
+
+
+
+#### 拉取RokidOS编译镜像
+
+```
+docker pull siokagami/rokidos-linux-make
+```
+
+### 在容器中运行Docker镜像
+
+```
+ docker run -it siokagami/rokidos-linux-make:v0.1.0
+```
+
+
 
 ### 配置USB使用权限
 

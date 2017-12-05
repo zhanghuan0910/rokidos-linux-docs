@@ -34,7 +34,7 @@ $ PATH=~/bin:$PATH
 
 		如果您的办公环境可以不能访问 Google 网站，您可以使用Rokid 修正版的 repo 工具。
 		```
-		$ curl http://scm-deps-library.rokid-inc.com/linux/buildroot_dl_aml/tools/repo > ~/bin/repo
+		$ curl https://scm-deps-library.rokid-inc.com/linux/buildroot_dl_aml/tools/repo > ~/bin/repo
 		$ chmod a+x ~/bin/repo
 		```
 	

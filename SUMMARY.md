@@ -34,5 +34,7 @@
     * [开发板用户手册](reference/dev_board/board_list.md)
         * [Amlogic/A113 用户手册](reference/dev_board/amlogic/usermanual_a113.md)
         * [Amlogic/S905D 用户手册](reference/dev_board/amlogic/usermanual_s905d.md)
-    * [智能家居接入](https://rokid.github.io/rokid-homebase-docs/)
+    * [Linux 设备端技能列表](https://github.com/RokidSkills)
+    * [云端技能开发说明文档](https://developer.rokid.com/docs/)
+    * [智能家居接入API](https://rokid.github.io/rokid-homebase-docs/)
 

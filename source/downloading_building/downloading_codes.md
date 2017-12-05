@@ -4,6 +4,16 @@
 
 对外开放的 RokidOS 源代码，每天凌晨4点自动同步。
 
+## 注册成为 Rokid 平台开发者
+1. 登录方式<br>
+登录 [openai.rokid.com](http://openai.rokid.com) ，会统一跳转到 [Rokid开发者网站](https://developer-account.rokid.com) 进行授权认证（如果是未注册用户，请先注册），登录后会跳转到 gerrit 页面，右上角就是登录用户名。
+
+2. 代码访问权限说明<br>
+gerrit 服务仅开放 ssh 方式下载，所以必须先将你机器的公钥 添加到你个人账号下（右上角账号->Settings->ssh public keys->add key）。
+目前 Rokid 对外开放的代码，分两种：<br>
+  - 只要是注册用户就可以下载代码。<br>
+  - 必须进行特定的授权后才可以下载。<br>
+
 ## 安装repo 工具
 
 1. 确保主目录下有一个 bin/ 目录，并且该目录包含在路径中：

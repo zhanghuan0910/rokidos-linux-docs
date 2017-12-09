@@ -13,7 +13,7 @@
 
 #### 系统定义的板级配置变量
 
-**板级变量定义文件位置:** ```buildroot/board/rokid/common/board_config.in```
+**板级变量定义文件位置:** ```buildroot/board/rokid/common/rokidos_config.in```
 
 * **ROKIDOS_BOARDCONFIG_CAPTURE_DEVICEID** <br>
 	* 变量类型: **int**<br>

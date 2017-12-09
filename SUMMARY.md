@@ -8,8 +8,9 @@
         * [下载源代码](source/downloading_building/downloading_codes.md)
         * [准备构建](source/downloading_building/building.md)
         * [刷机说明](source/downloading_building/burn_image.md)
-        * [网络连接](source/downloading_building/network_connect.md)
-        * [语音接入](source/downloading_building/voice_access.md)
+    * [设备使用](source/system_setting/overview.md)
+        * [网络接入配置](source/system_setting/connect_to_internet.md)
+        * [语音接入配置](source/system_setting/openvoice_access_config.md)
 * [系统移植](porting/overview.md)
     * 音频
         * [概览](porting/audio/overview.md)

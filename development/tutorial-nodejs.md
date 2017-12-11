@@ -51,7 +51,7 @@ tts.say('text to speech');
 
 该模块提供以下方法：
 
-- `play(text, callback)` 让若琪说出指定的文字内容
+- `say(text, callback)` 让若琪说出指定的文字内容
   - {String} `text` 需要让若琪说的文字，支持 `SSML`
   - {Function} `callback` 当 `tts` 完成、取消或其他方式结束时，会通过这个回调函数通知用户
 - `stop()` 停止播放当前内容
@@ -64,37 +64,47 @@ tts.say('text to speech');
 const player = require('@rokid/player');
 player.play(url);
 player.stop();
-player.resume();
 player.pause();
+player.resume();
 ```
 
 该模块提供以下方法：
 
-- `play(url)` 播放某个 `url` 的媒体
-  - {String} `url` 媒体地址
-- `stop()` 停止当前应用中所有的媒体播放
-- `pause()` 暂停当前应用中所有的媒体播放
-- `resume()` 恢复当前应用中所有的媒体播放
+- `play(url)` 播放某个 `url` 的媒体；
+  - {String} `url` 媒体地址；
+- `stop()` 停止当前应用中所有的媒体播放；
+- `pause()` 暂停当前应用中所有的媒体播放；
+- `resume()` 恢复当前应用中所有的媒体播放；
 
 ### 灯光控制
 
-样例：
+- `startRound(color)` 转圈开始；
+- `stopRound()` 停止转圈；
+- `startBlink(color)` 眨眼效果；
+- `stopBlink()` 停止眨眼效果；
+- `createLayer(leds, options)` 通过指定的 LED 数目创建图层；
+- `removeAllLayers()` 移除当前所有图层；
 
-```js
-const light = require('@rokid/lumen');
-light.fill('red', 'all');
-light.update({
-  [1]: 'red',
-  [2]: 'green',
-});
-```
+图层(`LumenLayer`)接口：
 
-该模块提供以下方法：
+- 该对象通过 `createLayer()` 返回；
+- `fill(color)` 填充某个颜色；
+- `fade(from, to, speed)` 颜色渐变；
 
-- `fill(color, sets)` 向指定的 LED 填充单个颜色
-  - {String} `color` `RGB` 颜色值，支持的格式：#000000、red
-  - {Array} `sets` 表示需要填充颜色的 LED 坐标，目前 LED 阵列为一维
-- `update(dataWithSets)` 更底层的填充方法，一般用于更复杂的灯光渲染需求
-  - {Object} `dataWithSets` 该对象是 `LED-Color` 的映射关系
-- `gradients(dataWithSets, ms)` 提供灯光的渐变控制
+### 蓝牙控制
+
+- `open()` 打开蓝牙；
+- `close()` 关闭蓝牙；
+
+A2DP 模式
+
+- `a2dp(type)` 开启 `a2dp` 模式，`type` 为：`sink` 与 `link`；
+- `play()` 播放已连接设备的音乐；
+- `stop()` 停止已连接设备的音乐；
+- `pause()` 暂停蓝牙音乐；
+
+BLE 模式
+
+- `ble()` 打开并返回 `BluetoothLowEnergy` 对象；
+- `.onResp(cb)` 从 BLE 通道中获取数据；
 

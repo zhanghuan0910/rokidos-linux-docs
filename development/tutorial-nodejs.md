@@ -108,3 +108,50 @@ BLE 模式
 - `ble()` 打开并返回 `BluetoothLowEnergy` 对象；
 - `.onResp(cb)` 从 BLE 通道中获取数据；
 
+
+## 插件
+
+Node.js 提供了插件机制用于让开发者可以定制一些系统级的特性。
+
+### 系统事件捕获
+
+Node.js 提供了可以通过脚本的方式直接捕获一些系统事件，现支持：
+
+- [x] `voice wakeup`  语音唤醒
+- [x] `voice error`   语音错误
+- [x] `speech`        实时语音识别事件，会返回识别结果和状态
+- [x] `tts start`     tts 开始说话
+- [x] `tts end`       tts 结束
+- [x] `pickup start`  开始拾音
+- [x] `pickup end`    结束拾音
+
+首先创建如下文件 `/data/plugins/EventHandler.js`，然后该文件内写入如下代码：
+
+```js
+const EventEmitter = require('events').EventEmitter;
+const handler = module.exports = new EventEmitter();
+handler.on('voice wakeup', (data) => {
+  // 语音唤醒事件
+});
+handler.on('voice error', (err) => {
+  // TODO
+})
+handler.on('speech', (data) => {
+  // 通过`data.text`获取文本
+  // 通过`data.state`获取识别状态：complete, pending
+});
+handler.on('tts start', (text) => {
+  // TTS开始事件，并返回TTS的语句
+});
+handler.on('tts end', () => {
+  // TTS结束事件
+});
+handler.on('pickup start', (data) => {
+  // 拾音开始
+});
+handler.on('pickup end', (data) => {
+  // 拾音结束
+});
+```
+
+这里注意，一定要把该对象设置到 `module.exports` 返回，否则将无法生效。

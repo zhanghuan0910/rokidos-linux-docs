@@ -14,6 +14,9 @@ gerrit 服务仅开放 ssh 方式下载，所以必须先将你机器的公钥 �
   - 只要是注册用户就可以下载代码。<br>
   - 必须进行特定的授权后才可以下载。<br>
 
+**注意：下载代码 *账号名* 不一定是右上角所显示那个 *用户名*，您的账号可以通过：**[https://openai.rokid.com/#/admin/projects/tools/repo](https://openai.rokid.com/#/admin/projects/tools/repo)下的【ssh】tab中的显示 *账号* 获知。
+![示例图](../../files/gerrit_setting.png)
+
 ## 安装repo 工具
 
 1. 确保主目录下有一个 bin/ 目录，并且该目录包含在路径中：

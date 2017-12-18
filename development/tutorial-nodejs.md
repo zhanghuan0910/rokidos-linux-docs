@@ -117,6 +117,7 @@ Node.js 提供了插件机制用于让开发者可以定制一些系统级的特
 
 Node.js 提供了可以通过脚本的方式直接捕获一些系统事件，现支持：
 
+- [x] `voice info`    语音信息，会附带能量值
 - [x] `voice wakeup`  语音唤醒
 - [x] `voice error`   语音错误
 - [x] `speech`        实时语音识别事件，会返回识别结果和状态
@@ -130,6 +131,9 @@ Node.js 提供了可以通过脚本的方式直接捕获一些系统事件，现
 ```js
 const EventEmitter = require('events').EventEmitter;
 const handler = module.exports = new EventEmitter();
+handler.on('voice info', (data) => {
+  // data.energy 当前语音的能量值
+});
 handler.on('voice wakeup', (data) => {
   // 语音唤醒事件
 });

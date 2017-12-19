@@ -114,6 +114,6 @@ ftp://ftp-customer.rokid-inc.com:9921/images/amlogic_a1xx_linux/amlogic_a1xx_lin
 
 905D 4mic 版本 Linux koalajs 镜像
 ```
-ftp://ftp-customer.rokid-inc.com:9921/images/amlogic_a1xx_linux/amlogic_a1xx_linux_koalajs_s905d_dev/dev/47
+ftp://ftp-customer.rokid-inc.com:9921/images/amlogic_a1xx_linux/amlogic_a1xx_linux_koalajs_s905d_dev/dev/57
 
 ```

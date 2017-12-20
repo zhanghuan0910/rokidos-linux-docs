@@ -10,10 +10,9 @@
 
 ## 设置 Linux 编译环境
 
-    RokidOS 提供2种编译环境，其中用户可以自行安装 Ubuntu 系统配置相关环境，也可以
-    使用我们提供的 Docker 镜像来实现编译环境。
+RokidOS 提供2种编译环境: [64-bit Ubuntu 系统](#build-with-ubuntu64) 和 [Docker](#build-with-docker)</a>
 
-### *64-bit* Ubuntu 系统
+### <a id="build-with-ubuntu64">*64-bit* Ubuntu 系统</a>
 
 1. 安装 Ubuntu (>= 14.04) 64位系统。
 2. 安装编译必须的软件包：
@@ -28,7 +27,7 @@
 
 >注意：buildroot 编译 cmake 过程中，如果 OpenSSL 为1.1.0会出现报错，建议各位开发者使用**1.0.1f**的 OpenSSL 版本。
 
-### Docker
+### <a id="build-with-docker">Docker</a>
 
 为了统一编译环境，现提供Docker镜像，用户可直接获取Docker镜像进行编译
 
@@ -44,7 +43,7 @@ https://www.docker-cn.com/registry-mirror
 #### 拉取RokidOS编译镜像
 
 ```
-docker pull siokagami/rokidos-linux-make
+docker pull siokagami/rokidos-linux-make:v0.3.0
 ```
 
 ### 在容器中运行Docker镜像

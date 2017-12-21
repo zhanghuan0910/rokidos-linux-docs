@@ -11,6 +11,7 @@
     * [设备使用](source/system_setting/overview.md)
         * [网络接入配置](source/system_setting/connect_to_internet.md)
         * [语音接入配置](source/system_setting/openvoice_access_config.md)
+    * [设备调试](source/develop_debugging/debugging.md)
 * [系统移植](porting/overview.md)
     * 音频
         * [概览](porting/audio/overview.md)

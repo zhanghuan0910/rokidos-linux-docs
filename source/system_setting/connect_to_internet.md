@@ -4,7 +4,7 @@
 这里介绍如何配置网络，主要分为蓝牙配网和手动配网。
 
 ## 蓝牙配网
-下载 ROKID APP，安装后，打开 APP，点击左上角，找到“若琪设置”==>“添加新设备”，如下图：
+下载 [Rokid 官方手机App](http://s.rokidcdn.com/app/m_index.html)，安装后，打开 App，点击左上角，找到“若琪设置”==>“添加新设备”，如下图：
 
 ![network_connect](../../files/network_connect.jpg) 
 

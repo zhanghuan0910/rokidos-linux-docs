@@ -30,6 +30,11 @@ RokidOS 目前使用 systemd 来管理系统所有服务，重要服务如 vui�
 
 详细使用方法可以查看 systemctl -h
 
+## 属性查看
+1. 属性查看，如序列号(sn)，seed 号，使用命令: getprop <br>
+
+2. 属性设置，相关命令为 setprop xxx value （注意 ro（只读）属性不能设置）
+
 ##播放／录音
 
 1. 播放（wav文件）<br>

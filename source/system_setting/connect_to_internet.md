@@ -20,9 +20,9 @@
 	update_config=1
 	network={
         	ssid="wifi名"
-        	psk="wifi密码"
+		psk="wifi密码"
 	}
-       ```
+	```
 3. sync
 4. wpa_cli reconfigure
 5. systemctl restart dhcpcd

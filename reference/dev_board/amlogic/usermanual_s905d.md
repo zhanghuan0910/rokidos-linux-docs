@@ -211,8 +211,20 @@ echo Lunch menu... pick a combo:
 4. rp102_s905d_release
 5. banban_m_a113_release
 6. nana_t2_s905d_release
+7. banban_m2_a113_release
+8. banban_m3_a113_release
+9. koalajs_s905d_release
 
-Which would you like? [6]
+Which would you like?
 ```
+其中
+```
+nana_t2_s905d_release: 为默认使用 Nodejs 905d 4mic 开发板
+koalajs_s905d_release: 为使用 Koalajs 特性的905d 4 mic 开发板 
+```
+**请根据开发板型号选择相应软件版本**
 
-
+## 编译代码
+```
+make
+```

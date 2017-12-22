@@ -14,7 +14,7 @@
 通过执行以下五个命令进行配网，然后 ifconfig 查看是否获得 ip 地址。
 1. adb shell 登录 RokidOS
 2. vi /data/system/wpa_supplicant.conf
-	```
+```
 	ctrl_interface=/var/run/wpa_supplicant
 	wap_scan=1
 	update_config=1
@@ -22,7 +22,7 @@
         	ssid="wifi名"
 		psk="wifi密码"
 	}
-	```
+```
 3. sync
 4. wpa_cli reconfigure
 5. systemctl restart dhcpcd

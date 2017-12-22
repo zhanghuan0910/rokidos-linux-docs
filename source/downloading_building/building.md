@@ -2,7 +2,7 @@
 
 现在您已经获取了 RokidOS 源代码树，做好了编译环境配置。大致编译步骤请参考如下示例操作。
 
-**以下操作仅保证 Amlogic/A113 开发板有效。** 不同的开发板或有些许差别，请您在编译时根据您所使用的开发板来参考，详情可到[开发板用户手册](../../reference/dev_board/board_list.html)章节查询参考。
+**以下操作仅保证 Amlogic/A113 开发板有效。** 不同的开发板或有些许差别，请您在编译时根据您所使用的开发板来参考，详情（905D等其他开发板）可到[开发板用户手册](../../reference/dev_board/board_list.html)章节查询参考。
 
 
 ## 设置编译环境
@@ -34,10 +34,17 @@ echo Lunch menu... pick a combo:
 4. rp102_s905d_release
 5. banban_m_a113_release
 6. nana_t2_s905d_release
-
+7. banban_m2_a113_release
+8. banban_m3_a113_release
 Which would you like? [2]5
 ```
-**请选择5**
+其中
+```
+banban_m_a113_release:  为 A113 6mic v1.0 麦克风板
+banban_m2_a113_release: 为 A113 4mic 麦克风板
+banban_m3_a113_release: 为 A113 6mic v1.1 麦克风板
+```
+**请根据开发板型号选择相应软件版本**
 
 ## 编译代码
 ```

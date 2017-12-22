@@ -19,8 +19,8 @@
 	wap_scan=1
 	update_config=1
 	network={
-        ssid=“wifi名"
-        psk=“wifi密码"
+        ssid="wifi名"
+        psk="wifi密码"
 	}
         ```
 3. sync

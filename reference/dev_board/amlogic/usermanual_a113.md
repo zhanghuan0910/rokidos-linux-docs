@@ -209,8 +209,19 @@ echo Lunch menu... pick a combo:
 4. rp102_s905d_release
 5. banban_m_a113_release
 6. nana_t2_s905d_release
+7. banban_m2_a113_release
+8. banban_m3_a113_release
 
-Which would you like? [5]
+Which would you like? 
 ```
-
-
+其中
+```
+banban_m_a113_release:  为 A113 6mic v1.0 麦克风板，版本号 v1.0 在麦克风板正中央丝印上
+banban_m2_a113_release: 为 A113 4mic 麦克风板
+banban_m3_a113_release: 为 A113 6mic v1.1 麦克风板, 版本号 v1.1 在麦克风板正中央丝印上
+```
+**请根据开发板型号选择相应软件版本**
+## 编译代码
+```
+make
+```

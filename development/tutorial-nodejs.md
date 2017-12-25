@@ -117,14 +117,17 @@ Node.js 提供了插件机制用于让开发者可以定制一些系统级的特
 
 Node.js 提供了可以通过脚本的方式直接捕获一些系统事件，现支持：
 
-- [x] `voice info`    语音信息，会附带能量值
-- [x] `voice wakeup`  语音唤醒
-- [x] `voice error`   语音错误
-- [x] `speech`        实时语音识别事件，会返回识别结果和状态
-- [x] `tts start`     tts 开始说话
-- [x] `tts end`       tts 结束
-- [x] `pickup start`  开始拾音
-- [x] `pickup end`    结束拾音
+- [x] `voice info`          语音信息，会附带能量值
+- [x] `voice coming`        语音寻向
+- [x] `voice accept`        语音仲裁结果：接受
+- [x] `voice reject`        语音仲裁结果：拒绝
+- [x] `voice local sleep`   本地休眠
+- [x] `voice error`         语音错误
+- [x] `speech`              实时语音识别事件，会返回识别结果和状态
+- [x] `tts start`           tts 开始说话
+- [x] `tts end`             tts 结束
+- [x] `pickup start`        开始拾音
+- [x] `pickup end`          结束拾音
 
 首先创建如下文件 `/data/plugins/EventHandler.js`，然后该文件内写入如下代码：
 
@@ -134,12 +137,21 @@ const handler = module.exports = new EventEmitter();
 handler.on('voice info', (data) => {
   // data.energy 当前语音的能量值
 });
-handler.on('voice wakeup', (data) => {
-  // 语音唤醒事件
+handler.on('voice coming', (data) => {
+  // 语音寻向
+});
+handler.on('voice accept', (data) => {
+  // 语音仲裁结果：接受
+});
+handler.on('voice reject', (data) => {
+  // 语音仲裁结果：拒绝
+})
+handler.on('voice local sleep', (data) => {
+  // 本地休眠事件
 });
 handler.on('voice error', (err) => {
-  // TODO
-})
+  // 报错
+});
 handler.on('speech', (data) => {
   // 通过`data.text`获取文本
   // 通过`data.state`获取识别状态：complete, pending
@@ -159,3 +171,19 @@ handler.on('pickup end', (data) => {
 ```
 
 这里注意，一定要把该对象设置到 `module.exports` 返回，否则将无法生效。
+
+通过 `voice error` 我们可以获得当前交互过程中的异常状态，如下：
+
+| enum                             | code | message         |
+|----------------------------------|------|-----------------|
+| SPEECH_UNAUTHENTICATED           | 2    | 服务端未授权       |
+| SPEECH_CONNECTION_EXCEED         | 3    | 连接数超过        |
+| SPEECH_SERVER_RESOURCE_EXHASTED  | 4    | 资源耗尽          |
+| SPEECH_SERVER_BUSY               | 5    | 服务器忙          |
+| SPEECH_SERVER_INTERNAL           | 6    | 服务器内部错误     |
+| SPEECH_VAD_TIMEOUT               | 7    | 激活检测超时       |
+| SPEECH_SERVICE_UNAVAILABLE       | 101  | 服务不可用         |
+| SPEECH_SDK_CLOSED                | 102  | 连接已关闭         |
+| SPEECH_TIMEOUT                   | 103  | 服务访问超时       |
+| SPEECH_UNKNOWN                   | 104  | 未知错误          |
+

@@ -31,8 +31,14 @@
         "paperSize": "a4"
     },
     "plugins": [
-        "expandable-chapters-interactive"
+        "expandable-chapters-interactive",
+        "vistors-github"
     ],
+    "pluginsConfig": {
+        "vistors-github": {
+            "repo": "Rokid/rokidos-linux-docs"
+        }
+    },
     "title": "RokidOS 开放源码项目",
     "variables": {}
 }

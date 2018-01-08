@@ -49,11 +49,10 @@ docker pull siokagami/rokidos-linux-make:v0.3.0
 ### 在容器中运行Docker镜像
 
 ```
- docker run -it siokagami/rokidos-linux-make:v0.3.0 -v {宿主中代码路径}:/home/rokidos
+ docker run -it -v {宿主中代码的绝对路径}:/home/rokidos siokagami/rokidos-linux-make:v0.3.0 
 ```
 进入容器中，执行编译指令
 ```
-docker exec -it rokidosmake /bin/bash
 cd /home/rokidos
 source rokid_br_external/build/setenv.sh
 lunch

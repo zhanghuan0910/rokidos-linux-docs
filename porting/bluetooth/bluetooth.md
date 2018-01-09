@@ -2,11 +2,11 @@
 
 buildroot/package/aml\_brcm\_bsa:博通模组厂商提供的代码包，主要是mk file和config.in文件
 
-vendor/broadcom/brcm-bsa：以上代码包实际所包含的的代码所在
+vendor/broadcom/brcm-bsa：以上代码包实际所包含的代码所在
 
 rokid\_br\_external/package/btflinger：蓝牙的service的代码包，主要是mk file和config.in文件，相关启动脚本
 
-robot/services/btflinger：以上代码包实际所包含的的代码所在
+robot/services/btflinger：以上代码包实际所包含的代码所在
 
 ```shell
 ├── api                              接口文件

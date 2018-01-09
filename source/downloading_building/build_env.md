@@ -10,7 +10,7 @@
 
 ## 设置 Linux 编译环境
 
-RokidOS 提供2种编译环境: [64-bit Ubuntu 系统](#build-with-ubuntu64) 和 [Docker](#build-with-docker)</a>
+RokidOS 提供2种编译环境: [64-bit Ubuntu 系统](#build-with-ubuntu64) 和 [Docker](#build-with-docker)
 
 ### <a id="build-with-ubuntu64">*64-bit* Ubuntu 系统</a>
 
@@ -62,7 +62,7 @@ lunch
 
 ### 配置USB使用权限
 
-为了方便开发者开发过程中对设备软件进行更新或系统配置，我们在 RokidOS 系统上移植了Android的adbd服务，为保障您能正常使用 adb 连接到设备，请您按照[USB 设备识别配置](http://snowdream.github.io/51-android/)中介绍的方法来配置您的系统，让 Ubuntu 能正确识别RokidOS 的开发板。
+为了方便开发者开发过程中对设备软件进行更新或系统配置，我们在 RokidOS 系统上移植了Android的adb服务，为保障您能正常使用 adb 连接到设备，请您按照[USB 设备识别配置](http://snowdream.github.io/51-android/)中介绍的方法来配置您的系统，让 Ubuntu 能正确识别RokidOS 的开发板。
 
 ## 下载源码
 编译环境配置完成，接下来就可以[下载源代码](downloading_codes.md)了。

@@ -33,11 +33,11 @@ board/amlogic/axg_s420_v1/axg_s420_v1.c
 
 ![upgrade-ota](../../files/upgrade-ota.png)
 
-具体ota操作分析如下：
+具体操作分析如下：
 
 1. 设备通过网络协议获取网络 OTA 升级包(rokid_upgrade_package.img)，存储在 data 分区；并设置升级参数到 misc 分区后设备 reboot，具体参数如下：
 2. 重启后，进入 uboot 状态，uboot 读取 misc 分区的标志位，如果判断是升级模式，会把 recovery 加载到内存中，跳转到 recovery 分区，并修改 bootcmds。
-3. recovery 分区相当于 Linux 内核+ramfsdist，启动 init 进程，读取 bootcmds，后会执行打包在 ramfslist 中 unpack 进程；
+3. recovery 分区相当于 Linux 内核+ramfsdist，启动 init 进程，读取 bootcmds 后会执行打包在 ramfslist 中 unpack 进程；
 4. unpack 进程会挂载 data 分区，后读取 bootcmds 结构体，开始解析升级包，以此烧写到对应分区，烧写完成后，重启设备；
 
 

@@ -51,7 +51,7 @@ class NativeInputManager 提供系统应用(如AMS)控制注册input服务的接
   
   功能：处理分发Motion事件
   
-  注：目前可空实现。待扩展。
+  注：目前可以空实现，待扩展。
 
 ### NativeInputManager：
 其中许多接口继承android框架但并未使用，其内部为空实现，待扩展。

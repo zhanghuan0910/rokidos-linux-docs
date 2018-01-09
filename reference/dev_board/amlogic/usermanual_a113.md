@@ -1,5 +1,7 @@
 # Amlogic/A113
 
+**注意 Amlogic/A113 开发手册目前只面向 Rokid 开发者提供。如未注册成为Rokid 开发者，请先至 Rokid 官网注册成为开发者。**
+
 ## 开发板套件基本参数介绍
 
 * **CPU：** Amlogic A113X A53x4 up to 1.5Ghz<br>

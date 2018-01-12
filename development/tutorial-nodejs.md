@@ -108,6 +108,14 @@ BLE 模式
 - `ble()` 打开并返回 `BluetoothLowEnergy` 对象；
 - `.onResp(cb)` 从 BLE 通道中获取数据；
 
+## 配置
+
+RokidOS 会读取 `/data/system/device.json` 中的信息来初始化一些系统信息
+
+- `namePrefix` {String} 用于设备开启蓝牙时的名称前缀，如："Rokid-Pebble-" 等。
+- `triggerWord` {Object} 自定义激活词配置：
+  - `text` {String} 激活词的汉字。
+  - `pinyin` {String} 激活词拼音字符，如："ruo4qi2"。
 
 ## 插件
 
@@ -117,17 +125,17 @@ Node.js 提供了插件机制用于让开发者可以定制一些系统级的特
 
 Node.js 提供了可以通过脚本的方式直接捕获一些系统事件，现支持：
 
-- [x] `voice info`          语音信息，会附带能量值
-- [x] `voice coming`        语音寻向
-- [x] `voice accept`        语音仲裁结果：接受
-- [x] `voice reject`        语音仲裁结果：拒绝
-- [x] `voice local sleep`   本地休眠
-- [x] `voice error`         语音错误
-- [x] `speech`              实时语音识别事件，会返回识别结果和状态
-- [x] `tts start`           tts 开始说话
-- [x] `tts end`             tts 结束
-- [x] `pickup start`        开始拾音
-- [x] `pickup end`          结束拾音
+- `voice info`          语音信息，会附带能量值
+- `voice coming`        语音寻向
+- `voice accept`        语音仲裁结果：接受
+- `voice reject`        语音仲裁结果：拒绝
+- `voice local sleep`   本地休眠
+- `voice error`         语音错误
+- `speech`              实时语音识别事件，会返回识别结果和状态
+- `tts start`           tts 开始说话
+- `tts end`             tts 结束
+- `pickup start`        开始拾音
+- `pickup end`          结束拾音
 
 首先创建如下文件 `/data/plugins/EventHandler.js`，然后该文件内写入如下代码：
 

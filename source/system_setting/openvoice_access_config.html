@@ -1,0 +1,830 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>语音接入配置 · RokidOS 开放源码项目</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="RokidOS Open Source Project Team (Linux)">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../develop_debugging/debugging.html" />
+    
+    
+    <link rel="prev" href="connect_to_internet.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://developer.rokid.com" target="_blank" class="custom-link">Rokid Developer Website</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    你好，开发者！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../getting_started/overview.html">
+            
+                <a href="../getting_started/overview.html">
+            
+                    
+                    RokidOS 入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    下载和构建
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../downloading_building/requirements.html">
+            
+                <a href="../downloading_building/requirements.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../downloading_building/build_env.html">
+            
+                <a href="../downloading_building/build_env.html">
+            
+                    
+                    搭建编译环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../downloading_building/downloading_codes.html">
+            
+                <a href="../downloading_building/downloading_codes.html">
+            
+                    
+                    下载源代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../downloading_building/building.html">
+            
+                <a href="../downloading_building/building.html">
+            
+                    
+                    准备构建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../downloading_building/burn_image.html">
+            
+                <a href="../downloading_building/burn_image.html">
+            
+                    
+                    刷机说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                    设备使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="connect_to_internet.html">
+            
+                <a href="connect_to_internet.html">
+            
+                    
+                    网络接入配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.2" data-path="openvoice_access_config.html">
+            
+                <a href="openvoice_access_config.html">
+            
+                    
+                    语音接入配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../develop_debugging/debugging.html">
+            
+                <a href="../develop_debugging/debugging.html">
+            
+                    
+                    设备调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../porting/overview.html">
+            
+                <a href="../../porting/overview.html">
+            
+                    
+                    系统移植
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    音频
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../porting/audio/overview.html">
+            
+                <a href="../../porting/audio/overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../porting/audio/terminology.html">
+            
+                <a href="../../porting/audio/terminology.html">
+            
+                    
+                    术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../porting/bootanim/bootanim.html">
+            
+                <a href="../../porting/bootanim/bootanim.html">
+            
+                    
+                    开机动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../porting/wifi/wifi.html">
+            
+                <a href="../../porting/wifi/wifi.html">
+            
+                    
+                    WiFi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../porting/upgrade/upgrade.html">
+            
+                <a href="../../porting/upgrade/upgrade.html">
+            
+                    
+                    系统升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../porting/bluetooth/bluetooth.html">
+            
+                <a href="../../porting/bluetooth/bluetooth.html">
+            
+                    
+                    蓝牙服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../development/overview.html">
+            
+                <a href="../../development/overview.html">
+            
+                    
+                    应用开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../development/tutorial-nodejs.html">
+            
+                <a href="../../development/tutorial-nodejs.html">
+            
+                    
+                    Node.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../development/tutorial-cplusplus.html">
+            
+                <a href="../../development/tutorial-cplusplus.html">
+            
+                    
+                    C/C++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../development/cplusplus/tts.html">
+            
+                <a href="../../development/cplusplus/tts.html">
+            
+                    
+                    语音合成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../development/cplusplus/volume_ctrl.html">
+            
+                <a href="../../development/cplusplus/volume_ctrl.html">
+            
+                    
+                    音量控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../development/cplusplus/mediaplayer.html">
+            
+                <a href="../../development/cplusplus/mediaplayer.html">
+            
+                    
+                    多媒体播放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../../development/cplusplus/lumenflinger.html">
+            
+                <a href="../../development/cplusplus/lumenflinger.html">
+            
+                    
+                    灯光效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="../../development/cplusplus/wpa_ctrl.html">
+            
+                <a href="../../development/cplusplus/wpa_ctrl.html">
+            
+                    
+                    WiFi控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="../../development/cplusplus/inputflinger.html">
+            
+                <a href="../../development/cplusplus/inputflinger.html">
+            
+                    
+                    输入服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.7" data-path="../../development/cplusplus/power_ctrl.html">
+            
+                <a href="../../development/cplusplus/power_ctrl.html">
+            
+                    
+                    电量查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.8" data-path="../../development/cplusplus/upgrade.html">
+            
+                <a href="../../development/cplusplus/upgrade.html">
+            
+                    
+                    系统升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.9" data-path="../../development/cplusplus/btflinger.html">
+            
+                <a href="../../development/cplusplus/btflinger.html">
+            
+                    
+                    蓝牙
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    参考
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../reference/dev_board/board_list.html">
+            
+                <a href="../../reference/dev_board/board_list.html">
+            
+                    
+                    开发板用户手册
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../../reference/dev_board/amlogic/usermanual_a113.html">
+            
+                <a href="../../reference/dev_board/amlogic/usermanual_a113.html">
+            
+                    
+                    Amlogic/A113 用户手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../../reference/dev_board/amlogic/usermanual_s905d.html">
+            
+                <a href="../../reference/dev_board/amlogic/usermanual_s905d.html">
+            
+                    
+                    Amlogic/S905D 用户手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <a target="_blank" href="https://github.com/RokidSkills">
+            
+                    
+                    Linux 设备端技能列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <a target="_blank" href="https://developer.rokid.com/docs/">
+            
+                    
+                    云端技能开发说明文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" >
+            
+                <a target="_blank" href="https://rokid.github.io/rokid-homebase-docs/">
+            
+                    
+                    智能家居接入API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >语音接入配置</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8BED;&#x97F3;&#x63A5;&#x5165;&#x914D;&#x7F6E;">&#x8BED;&#x97F3;&#x63A5;&#x5165;&#x914D;&#x7F6E;</h1>
+<p>&#x8FD9;&#x91CC;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x83B7;&#x5F97; Rokid &#x8BED;&#x97F3;&#x670D;&#x52A1;&#x3002;&#x5982;&#x679C;&#x60A8;&#x662F;&#x4E2A;&#x4EBA;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x6216;&#x8BB8;&#x60A8;&#x4E0D;&#x9700;&#x8981;&#x8FC7;&#x591A;&#x5173;&#x6CE8;&#x8FD9;&#x4E2A;&#x7AE0;&#x8282;&#x3002;
+&#x8BE5;&#x7AE0;&#x8282;&#x9488;&#x5BF9;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x65B0;&#x7684;&#x673A;&#x578B;&#x7684;&#x9700;&#x6C42;&#x800C;&#x6574;&#x7406;&#x4E86;&#x5982;&#x4E0B;&#x7684;&#x6307;&#x5BFC;&#x65B9;&#x5F0F;&#x3002;&#x968F;&#x7740; Rokid &#x540E;&#x53F0;&#x670D;&#x52A1;&#x5404;&#x9879;&#x57FA;&#x7840;&#x8BBE;&#x65BD;&#x7684;&#x9010;&#x6B65;&#x5B8C;&#x5584;&#xFF0C;&#x8FD9;&#x4E9B;&#x914D;&#x7F6E;&#x5728;&#x5C06;&#x6765;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x624B;&#x52A8;&#x63A5;&#x5165;&#xFF0C;&#x6216;&#x8005;&#x66F4;&#x7B80;&#x5355;&#xFF0C;&#x76EE;&#x524D;&#x662F;&#x4E00;&#x4E2A;&#x6682;&#x65F6;&#x7684;&#x4FEE;&#x6539;&#x8BBE;&#x5907;&#x7C7B;&#x578B;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
+<h2 id="&#x624B;&#x52A8;&#x914D;&#x7F6E;">&#x624B;&#x52A8;&#x914D;&#x7F6E;</h2>
+<p>&#x9996;&#x5148;&#x9700;&#x8981;&#x767B;&#x5F55; <a href="https://developer.rokid.com" target="_blank">Rokid &#x5F00;&#x653E;&#x5E73;&#x53F0;</a>&#xFF0C;&#x4E4B;&#x540E;&#x6309;&#x7167;&#x5982;&#x4E0B;&#x6B65;&#x9AA4;&#x6267;&#x884C;&#xFF1A;</p>
+<ol>
+<li>&#x8FDB;&#x5165; <a href="https://developer.rokid.com" target="_blank">Rokid &#x5F00;&#x653E;&#x5E73;&#x53F0;</a> &#x7533;&#x8BF7; Rokid &#x8D26;&#x53F7;&#xFF0C;&#x82E5;&#x60A8;&#x5DF2;&#x7ECF;&#x7533;&#x8BF7;&#x4E86; Rokid &#x8D26;&#x53F7;&#xFF0C;&#x53EF;&#x76F4;&#x63A5;&#x767B;&#x5F55;(&#x4F46;&#x9700;&#x8FDB;&#x884C;&#x90E8;&#x5206;&#x4FE1;&#x606F;&#x8865;&#x5168;)&#x3002;</li>
+<li>&#x767B;&#x5F55;&#x540E;&#x70B9;&#x9009;&#x300C;&#x8BED;&#x97F3;&#x63A5;&#x5165;&#x300D;&#x8FDB;&#x884C;&#x8BBE;&#x5907;&#x8BA4;&#x8BC1;&#x4FE1;&#x606F;&#x7533;&#x8BF7;&#x3002;</li>
+<li><p>&#x5177;&#x4F53;&#x505A;&#x6CD5;&#xFF1A;&#x8BED;&#x97F3;&#x63A5;&#x5165; &gt;&gt; &#x521B;&#x5EFA;&#x65B0;&#x8BBE;&#x5907; &gt;&gt; &#x586B;&#x5199;&#x8BBE;&#x5907;&#x540D;&#x79F0; &gt;&gt; &#x521B;&#x5EFA;&#x8BA4;&#x8BC1;&#x6587;&#x4EF6;&#x3002;&#x4E4B;&#x540E;&#x60A8;&#x5C06;&#x83B7;&#x5F97;&#xFF1A;</p>
+<pre><code> account_id&#x3001;device_type_id&#x3001;secret&#x3001;key
+</code></pre></li>
+<li><p>adb shell &#x767B;&#x5F55; RokidOS&#xFF0C;&#x5C06;&#x4E0A;&#x9762;&#x83B7;&#x5F97;&#x7684; key &#x7B49;&#x5199;&#x5165;&#x5230; openvoice_profile.json &#x4E2D;</p>
+<p> vi /data/system/openvoice_profile.json </p>
+<pre><code> {
+     &quot;host&quot;: &quot;apigwws.open.rokid.com&quot;,
+     &quot;event_req_host&quot;: &quot;apigwrest.open.rokid.com&quot;,
+     &quot;port&quot;: &quot;443&quot;,
+     &quot;branch&quot;: &quot;/api&quot;,
+     &quot;key&quot;: &quot;your key&quot;,
+     &quot;device_type_id&quot;: &quot;your device_type_id&quot;,
+     &quot;device_id&quot;: &quot;your account_id&quot;,
+     &quot;secret&quot;: &quot;your secret&quot;,
+     &quot;api_version&quot;:&quot;1&quot;,
+     &quot;lang&quot;: &quot;zh&quot;,
+     &quot;codec&quot;: &quot;opu&quot;,
+     &quot;vad_mode&quot;: &quot;cloud&quot;,
+     &quot;vend_timeout&quot;: 500
+ }
+</code></pre></li>
+<li>sync &#x540C;&#x6B65;</li>
+<li>reboot &#x540E;&#x5373;&#x83B7;&#x5F97;&#x8BED;&#x97F3;&#x63A5;&#x5165;</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="connect_to_internet.html" class="navigation navigation-prev " aria-label="Previous page: 网络接入配置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../develop_debugging/debugging.html" class="navigation navigation-next " aria-label="Next page: 设备调试">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"语音接入配置","level":"1.2.2.2","depth":3,"next":{"title":"设备调试","level":"1.2.3","depth":2,"path":"source/develop_debugging/debugging.md","ref":"source/develop_debugging/debugging.md","articles":[]},"previous":{"title":"网络接入配置","level":"1.2.2.1","depth":3,"path":"source/system_setting/connect_to_internet.md","ref":"source/system_setting/connect_to_internet.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-interactive","vistors-github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"vistors-github":{"repo":"Rokid/rokidos-linux-docs"},"expandable-chapters-interactive":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"RokidOS Open Source Project Team (Linux)","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"RokidOS 开放源码项目","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Rokid Developer Website":"http://developer.rokid.com"}},"gitbook":"*","description":"RokidOS 开放源代码项目介绍","extension":null},"file":{"path":"source/system_setting/openvoice_access_config.md","mtime":"2018-01-12T11:27:05.806Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-12T11:29:15.034Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-interactive/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-vistors-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

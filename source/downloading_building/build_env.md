@@ -4,13 +4,13 @@
 
 ## 选择代码分支配置
 
-如果您需要使用最新的开发中的 RokidOS 代码，您可以选择 rokidbase.xml 来编译目前最新的代码，我们的对外代码服务器，在每天凌晨4点会同步到对外访问服务器上。
+如果您需要使用最新的开发中 RokidOS 代码，您可以选择 rokidbase.xml 来编译目前最新的代码，我们的对外代码服务器，在每天凌晨4点会同步到对外访问服务器上。
 
 如果您需要使用经过发布测试的 RokidOS 代码，请您选择我们对外发布列表中，指定有效的 REL 版本的 manifest 配置文件。 
 
 ## 设置 Linux 编译环境
 
-RokidOS 提供2种编译环境: [64-bit Ubuntu 系统](#build-with-ubuntu64) 和 [Docker](#build-with-docker)
+####RokidOS 提供2种编译环境: [64-bit Ubuntu 系统](#build-with-ubuntu64) 和 [Docker](#build-with-docker)
 
 ### <a id="build-with-ubuntu64">*64-bit* Ubuntu 系统</a>
 
@@ -66,3 +66,5 @@ lunch
 
 ## 下载源码
 编译环境配置完成，接下来就可以[下载源代码](downloading_codes.md)了。
+
+

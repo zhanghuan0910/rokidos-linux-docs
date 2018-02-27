@@ -10,7 +10,7 @@
 
 ## 设置 Linux 编译环境
 
-####RokidOS 提供2种编译环境: [64-bit Ubuntu 系统](#build-with-ubuntu64) 和 [Docker](#build-with-docker)
+#### RokidOS 提供2种编译环境: [64-bit Ubuntu 系统](#build-with-ubuntu64) 和 [Docker](#build-with-docker)
 
 ### <a id="build-with-ubuntu64">*64-bit* Ubuntu 系统</a>
 
